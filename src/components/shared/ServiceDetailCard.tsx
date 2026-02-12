@@ -1,13 +1,64 @@
 "use client";
 
-import { Phone, Mail, User, CheckCircle } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  User,
+  CheckCircle,
+  Home,
+  Shield,
+  Anchor,
+  Eye,
+  Baby,
+  TreePine,
+  GraduationCap,
+  Users,
+  Bike,
+  BookOpen,
+  Zap,
+  Scale,
+  HandHeart,
+  Sparkles,
+  HeartHandshake,
+  Languages,
+  Workflow,
+  Vote,
+  Heart,
+  HandHelping,
+  type LucideIcon,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
+
+// Icon-Mapping: String-Name → Lucide Komponente
+const iconMap: Record<string, LucideIcon> = {
+  Home,
+  Shield,
+  Anchor,
+  Eye,
+  Baby,
+  TreePine,
+  GraduationCap,
+  Users,
+  Bike,
+  BookOpen,
+  Zap,
+  Scale,
+  HandHeart,
+  Sparkles,
+  HeartHandshake,
+  Languages,
+  Workflow,
+  Vote,
+  Heart,
+  HandHelping,
+};
 
 interface ServiceDetailCardProps {
   title: string;
   description: string;
   details: string[];
+  icon?: string;
   contactPerson?: string;
   contactPhone?: string;
   contactEmail?: string;
@@ -16,19 +67,21 @@ interface ServiceDetailCardProps {
 
 /**
  * Detaillierte Service-Karte fuer Unterseiten.
- * Zeigt Titel, Beschreibung, Details als Liste und optionale Kontaktdaten.
+ * Zeigt Icon, Titel, Beschreibung, Details als Liste und optionale Kontaktdaten.
  * Linker Akzent-Rand in brand-red.
  */
 export function ServiceDetailCard({
   title,
   description,
   details,
+  icon,
   contactPerson,
   contactPhone,
   contactEmail,
   className,
 }: ServiceDetailCardProps) {
   const hasContact = contactPerson || contactPhone || contactEmail;
+  const IconComponent = icon ? iconMap[icon] : null;
 
   return (
     <ScrollReveal>
@@ -42,8 +95,15 @@ export function ServiceDetailCard({
           className,
         )}
       >
-        {/* Titel */}
-        <h3 className="text-xl font-semibold text-warm-900 dark:text-warm-100 mb-2">{title}</h3>
+        {/* Icon + Titel */}
+        <div className="flex items-start gap-4 mb-2">
+          {IconComponent && (
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-red-50 dark:bg-red-900/20 text-brand-red">
+              <IconComponent size={22} aria-hidden="true" />
+            </div>
+          )}
+          <h3 className="text-xl font-semibold text-warm-900 dark:text-warm-100 pt-1.5">{title}</h3>
+        </div>
 
         {/* Beschreibung */}
         <p className="text-warm-600 dark:text-warm-400 leading-relaxed mb-5">{description}</p>

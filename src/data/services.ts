@@ -12,6 +12,7 @@ export interface ServiceDetail {
   title: string;
   description: string;
   details: string[];
+  icon?: string; // Lucide icon name
   contactPerson?: string;
   contactPhone?: string;
   contactEmail?: string;
@@ -51,6 +52,7 @@ export const familyServices: ServiceDetail[] = [
     id: "spfh",
     title: "Sozialpädagogische Familienhilfe (SPFH)",
     description: "Wir unterstützen Familien direkt in ihrem Zuhause bei der Bewältigung von Alltagsproblemen, Erziehungsfragen und Krisensituationen.",
+    icon: "Home",
     details: [
       "Beratung und Begleitung bei Erziehungsfragen",
       "Unterstützung bei Behördenangelegenheiten",
@@ -63,6 +65,7 @@ export const familyServices: ServiceDetail[] = [
     id: "begleiteter-umgang",
     title: "Begleiteter Umgang",
     description: "Wir ermöglichen Kindern den Kontakt zu beiden Elternteilen in einem geschützten Rahmen.",
+    icon: "Shield",
     details: [
       "Geschützter Rahmen für Eltern-Kind-Kontakte",
       "Professionelle Begleitung durch Fachkräfte",
@@ -74,6 +77,7 @@ export const familyServices: ServiceDetail[] = [
     id: "familienanker",
     title: "Projekt Familienanker",
     description: "Ein niedrigschwelliges Angebot für Familien, die Orientierung und Unterstützung in ihrem Stadtteil suchen.",
+    icon: "Anchor",
     details: [
       "Offene Beratungsangebote",
       "Gruppenangebote für Eltern und Kinder",
@@ -85,6 +89,7 @@ export const familyServices: ServiceDetail[] = [
     id: "kind-im-blick",
     title: "Kind im Blick",
     description: "Unterstützung für Kinder, deren Geschwister schwer erkrankt sind — damit auch sie gesehen werden.",
+    icon: "Eye",
     details: [
       "Individuelle Begleitung für Geschwisterkinder",
       "Altersgerechte Gesprächsangebote",
@@ -100,6 +105,7 @@ export const childrenServices: ServiceDetail[] = [
     id: "buntekuh",
     title: "KITA & Familienzentrum BunteKuh",
     description: "Eine Kindertagesstätte, in der Vielfalt gelebt wird — mit Platz zum Spielen, Lernen und Wachsen.",
+    icon: "Baby",
     details: [
       "Ganztägige Betreuung für Kinder von 1-6 Jahren",
       "Mehrsprachige Fachkräfte",
@@ -111,6 +117,7 @@ export const childrenServices: ServiceDetail[] = [
     id: "lauerholz",
     title: "Bildungshaus Lauerholz",
     description: "KITA und offene Ganztagsschule unter einem Dach — Bildung als durchgängiger Weg.",
+    icon: "TreePine",
     details: [
       "Kindertagesstätte mit Vorschulbereich",
       "Offene Ganztagsschule (OGS)",
@@ -122,6 +129,7 @@ export const childrenServices: ServiceDetail[] = [
     id: "schulsozialarbeit",
     title: "Schulsozialarbeit",
     description: "Direkt an Schulen präsent — als Ansprechperson für Schüler:innen, Eltern und Lehrkräfte.",
+    icon: "GraduationCap",
     details: [
       "Einzelberatung und Krisenintervention",
       "Soziales Lernen in Klassen",
@@ -133,6 +141,7 @@ export const childrenServices: ServiceDetail[] = [
     id: "vernetzbar",
     title: "VernetzBar",
     description: "Ein Treffpunkt für junge Menschen zwischen 14 und 30 — Sport, Kultur und Gemeinschaft.",
+    icon: "Users",
     details: [
       "Offene Angebote für Jugendliche und junge Erwachsene",
       "Sport- und Kulturprojekte",
@@ -144,6 +153,7 @@ export const childrenServices: ServiceDetail[] = [
     id: "lastenrad",
     title: "Leih mich! — Das E-Lastenfahrrad",
     description: "Ein kostenloses E-Lastenrad für Jugendprojekte und Aktionen im Stadtteil.",
+    icon: "Bike",
     details: [
       "Kostenlose Ausleihe für Jugendarbeit",
       "Umweltfreundliche Mobilität",
@@ -158,6 +168,7 @@ export const schoolServices: ServiceDetail[] = [
     id: "bik",
     title: "BIK — Berufsintegrationsklassen",
     description: "Sprachförderung und berufliche Orientierung für zugewanderte Jugendliche an Berufsschulen.",
+    icon: "BookOpen",
     details: [
       "Intensive Deutschförderung",
       "Berufliche Orientierung und Praktika",
@@ -169,6 +180,7 @@ export const schoolServices: ServiceDetail[] = [
     id: "ksi",
     title: "KSI — Kurzzeitige Sozialpädagogische Intervention",
     description: "Schnelle, gezielte Hilfe bei akuten sozialen Herausforderungen im Schulalltag.",
+    icon: "Zap",
     details: [
       "Krisenintervention",
       "Einzelfallberatung",
@@ -180,6 +192,7 @@ export const schoolServices: ServiceDetail[] = [
     id: "anti-bias",
     title: "Anti-Bias & Anti-Diskriminierung",
     description: "Workshops, die sensibilisieren und einen respektvollen Umgang fördern.",
+    icon: "Scale",
     details: [
       "Bewusstseinsbildung für Vorurteile",
       "Handlungsstrategien gegen Diskriminierung",
@@ -191,6 +204,7 @@ export const schoolServices: ServiceDetail[] = [
     id: "gewaltpraevention",
     title: "Gewaltprävention",
     description: "Programme für ein gewaltfreies Miteinander an Schulen.",
+    icon: "HandHeart",
     details: [
       "Konfliktkompetenz-Training",
       "Deeskalationsstrategien",
@@ -202,6 +216,7 @@ export const schoolServices: ServiceDetail[] = [
     id: "selbstbehauptung",
     title: "Selbstbehauptung",
     description: "Stärkung des Selbstbewusstseins und der persönlichen Grenzen.",
+    icon: "Sparkles",
     details: [
       "Selbstverteidigungselemente",
       "Rollenspiele und Übungen",
@@ -217,6 +232,7 @@ export const inclusionServices: ServiceDetail[] = [
     id: "ambulante-hilfen",
     title: "Ambulante Eingliederungshilfe",
     description: "Unterstützung für Menschen mit seelischer Behinderung im Alltag — für mehr Selbstständigkeit und Teilhabe.",
+    icon: "HeartHandshake",
     details: [
       "Alltagsbegleitung und -strukturierung",
       "Unterstützung bei Behördengängen",
@@ -228,6 +244,7 @@ export const inclusionServices: ServiceDetail[] = [
     id: "sprachmittlung",
     title: "Sprach- und Kulturmittlung",
     description: "Unsere mehrsprachigen Fachkräfte überbrücken sprachliche und kulturelle Barrieren.",
+    icon: "Languages",
     details: [
       "Dolmetschen in über 7 Sprachen",
       "Kulturelle Vermittlung bei Behördenterminen",
@@ -239,6 +256,7 @@ export const inclusionServices: ServiceDetail[] = [
     id: "flow",
     title: "FLOW 4.0",
     description: "Ein Projekt für gesellschaftliche Teilhabe von Menschen mit Migrationserfahrung.",
+    icon: "Workflow",
     details: [
       "Empowerment und Qualifizierung",
       "Digitale Kompetenzen",
@@ -254,6 +272,7 @@ export const engagementServices: ServiceDetail[] = [
     id: "demokratie",
     title: "Partnerschaft für Demokratie Lübeck",
     description: "Wir stärken demokratische Werte und bürgerschaftliches Engagement in Lübeck.",
+    icon: "Vote",
     details: [
       "Förderung zivilgesellschaftlicher Projekte",
       "Jugendforum und Jugendbeteiligung",
@@ -265,6 +284,7 @@ export const engagementServices: ServiceDetail[] = [
     id: "hospiz",
     title: "Kultursensible Hospizbegeleitung",
     description: "Würdevolle Begleitung am Lebensende — kultursensibel und mehrsprachig.",
+    icon: "Heart",
     details: [
       "Begleitung schwerstkranker und sterbender Menschen",
       "Unterstützung für Angehörige",
@@ -276,6 +296,7 @@ export const engagementServices: ServiceDetail[] = [
     id: "ehrenamt",
     title: "Ehrenamtliches Engagement",
     description: "Es gibt viele Möglichkeiten, sich bei Sprungtuch einzubringen.",
+    icon: "HandHelping",
     details: [
       "Unterstützung in der Hospizbegeleitung",
       "Mithilfe bei Veranstaltungen",
