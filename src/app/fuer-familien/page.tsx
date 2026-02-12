@@ -11,11 +11,11 @@ import { familyServices } from "@/data/services";
 export const metadata: Metadata = {
   title: "Für Familien",
   description:
-    "Wir begleiten Familien in Lübeck — mit Sozialpädagogischer Familienhilfe, Begleitetem Umgang und weiteren Hilfsangeboten.",
+    "Wir begleiten Familien in Lübeck mit Sozialpädagogischer Familienhilfe, Begleitetem Umgang und weiteren Hilfsangeboten.",
   openGraph: {
     title: "Für Familien | Sprungtuch e.V.",
     description:
-      "Sozialpädagogische Familienhilfe, Begleiteter Umgang und mehr — individuelle Unterstützung für Familien in Lübeck.",
+      "Sozialpädagogische Familienhilfe, Begleiteter Umgang und mehr. Individuelle Unterstützung für Familien in Lübeck.",
   },
 };
 

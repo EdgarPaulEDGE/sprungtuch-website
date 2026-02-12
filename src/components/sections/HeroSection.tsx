@@ -81,8 +81,8 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.9, ease: [0.25, 0.1, 0.25, 1] }}
           className="mb-10 max-w-2xl text-lg leading-relaxed text-warm-600 dark:text-warm-400 sm:text-xl"
         >
-          Seit 1989 begleiten wir Familien, Kinder und Menschen in Lübeck
-          — mit Herz, Kompetenz und Respekt.
+          Seit 1989 begleiten wir Familien, Kinder und Menschen in Lübeck,
+          mit Herz, Kompetenz und Respekt.
         </motion.p>
 
         {/* CTA Buttons */}

@@ -13,7 +13,7 @@ export function Timeline() {
             Unsere Geschichte
           </h2>
           <p className="mx-auto mb-16 max-w-xl text-center text-warm-600 dark:text-warm-400">
-            Von der Gruendung 1989 bis heute — ueber drei Jahrzehnte
+            Von der Gruendung 1989 bis heute: ueber drei Jahrzehnte
             Engagement fuer Vielfalt und Zusammenhalt.
           </p>
         </ScrollReveal>

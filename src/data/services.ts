@@ -31,7 +31,7 @@ export const serviceAreas: Service[] = [
   {
     id: "kinder",
     title: "Für Kinder & Jugendliche",
-    shortDescription: "Von der Kita bis zur Jugendarbeit — wir schaffen Räume, in denen junge Menschen wachsen können.",
+    shortDescription: "Von der Kita bis zur Jugendarbeit: Wir schaffen Räume, in denen junge Menschen wachsen können.",
     description: "Kindertagesstätten, Schulsozialarbeit, Jugendnetzwerk und kreative Projekte.",
     icon: "GraduationCap",
     href: "/fuer-kinder",
@@ -88,7 +88,7 @@ export const familyServices: ServiceDetail[] = [
   {
     id: "kind-im-blick",
     title: "Kind im Blick",
-    description: "Unterstützung für Kinder, deren Geschwister schwer erkrankt sind — damit auch sie gesehen werden.",
+    description: "Unterstützung für Kinder, deren Geschwister schwer erkrankt sind, damit auch sie gesehen werden.",
     icon: "Eye",
     details: [
       "Individuelle Begleitung für Geschwisterkinder",
@@ -104,7 +104,7 @@ export const childrenServices: ServiceDetail[] = [
   {
     id: "buntekuh",
     title: "KITA & Familienzentrum BunteKuh",
-    description: "Eine Kindertagesstätte, in der Vielfalt gelebt wird — mit Platz zum Spielen, Lernen und Wachsen.",
+    description: "Eine Kindertagesstätte, in der Vielfalt gelebt wird. Mit Platz zum Spielen, Lernen und Wachsen.",
     icon: "Baby",
     details: [
       "Ganztägige Betreuung für Kinder von 1-6 Jahren",
@@ -116,7 +116,7 @@ export const childrenServices: ServiceDetail[] = [
   {
     id: "lauerholz",
     title: "Bildungshaus Lauerholz",
-    description: "KITA und offene Ganztagsschule unter einem Dach — Bildung als durchgängiger Weg.",
+    description: "KITA und offene Ganztagsschule unter einem Dach: Bildung als durchgängiger Weg.",
     icon: "TreePine",
     details: [
       "Kindertagesstätte mit Vorschulbereich",
@@ -128,7 +128,7 @@ export const childrenServices: ServiceDetail[] = [
   {
     id: "schulsozialarbeit",
     title: "Schulsozialarbeit",
-    description: "Direkt an Schulen präsent — als Ansprechperson für Schüler:innen, Eltern und Lehrkräfte.",
+    description: "Direkt an Schulen präsent, als Ansprechperson für Schüler:innen, Eltern und Lehrkräfte.",
     icon: "GraduationCap",
     details: [
       "Einzelberatung und Krisenintervention",
@@ -140,7 +140,7 @@ export const childrenServices: ServiceDetail[] = [
   {
     id: "vernetzbar",
     title: "VernetzBar",
-    description: "Ein Treffpunkt für junge Menschen zwischen 14 und 30 — Sport, Kultur und Gemeinschaft.",
+    description: "Ein Treffpunkt für junge Menschen zwischen 14 und 30. Sport, Kultur und Gemeinschaft.",
     icon: "Users",
     details: [
       "Offene Angebote für Jugendliche und junge Erwachsene",
@@ -151,7 +151,7 @@ export const childrenServices: ServiceDetail[] = [
   },
   {
     id: "lastenrad",
-    title: "Leih mich! — Das E-Lastenfahrrad",
+    title: "Leih mich! Das E-Lastenfahrrad",
     description: "Ein kostenloses E-Lastenrad für Jugendprojekte und Aktionen im Stadtteil.",
     icon: "Bike",
     details: [
@@ -166,7 +166,7 @@ export const childrenServices: ServiceDetail[] = [
 export const schoolServices: ServiceDetail[] = [
   {
     id: "bik",
-    title: "BIK — Berufsintegrationsklassen",
+    title: "BIK: Berufsintegrationsklassen",
     description: "Sprachförderung und berufliche Orientierung für zugewanderte Jugendliche an Berufsschulen.",
     icon: "BookOpen",
     details: [
@@ -178,7 +178,7 @@ export const schoolServices: ServiceDetail[] = [
   },
   {
     id: "ksi",
-    title: "KSI — Kurzzeitige Sozialpädagogische Intervention",
+    title: "KSI: Kurzzeitige Sozialpädagogische Intervention",
     description: "Schnelle, gezielte Hilfe bei akuten sozialen Herausforderungen im Schulalltag.",
     icon: "Zap",
     details: [
@@ -231,7 +231,7 @@ export const inclusionServices: ServiceDetail[] = [
   {
     id: "ambulante-hilfen",
     title: "Ambulante Eingliederungshilfe",
-    description: "Unterstützung für Menschen mit seelischer Behinderung im Alltag — für mehr Selbstständigkeit und Teilhabe.",
+    description: "Unterstützung für Menschen mit seelischer Behinderung im Alltag, für mehr Selbstständigkeit und Teilhabe.",
     icon: "HeartHandshake",
     details: [
       "Alltagsbegleitung und -strukturierung",
@@ -283,7 +283,7 @@ export const engagementServices: ServiceDetail[] = [
   {
     id: "hospiz",
     title: "Kultursensible Hospizbegeleitung",
-    description: "Würdevolle Begleitung am Lebensende — kultursensibel und mehrsprachig.",
+    description: "Würdevolle Begleitung am Lebensende, kultursensibel und mehrsprachig.",
     icon: "Heart",
     details: [
       "Begleitung schwerstkranker und sterbender Menschen",

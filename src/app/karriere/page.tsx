@@ -10,11 +10,11 @@ import { benefits } from "@/data/jobs";
 export const metadata: Metadata = {
   title: "Karriere",
   description:
-    "Karriere bei Sprungtuch e.V. — Werde Teil unseres engagierten Teams in Lübeck. Offene Stellen, Benefits und Bewerbungsprozess.",
+    "Karriere bei Sprungtuch e.V. in Lübeck. Werde Teil unseres engagierten Teams. Offene Stellen, Benefits und Bewerbungsprozess.",
   openGraph: {
     title: "Karriere | Sprungtuch e.V.",
     description:
-      "Werde Teil unseres Teams in Lübeck — offene Stellen, Benefits und ein wertschätzendes Arbeitsumfeld.",
+      "Werde Teil unseres Teams in Lübeck. Offene Stellen, Benefits und ein wertschätzendes Arbeitsumfeld.",
   },
 };
 
@@ -62,7 +62,7 @@ export default function KarrierePage() {
             So bewirbst du dich
           </h2>
           <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600">
-            Dein Weg zu uns ist unkompliziert — in nur vier Schritten.
+            Dein Weg zu uns ist unkompliziert: in nur vier Schritten.
           </p>
         </ScrollReveal>
         <ProcessSteps
@@ -80,7 +80,7 @@ export default function KarrierePage() {
             {
               title: "Kennenlerngespräch",
               description:
-                "Wir laden dich zu einem persönlichen Gespräch ein — locker und auf Augenhöhe.",
+                "Wir laden dich zu einem persönlichen Gespräch ein, locker und auf Augenhöhe.",
             },
             {
               title: "Willkommen im Team",

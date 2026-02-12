@@ -10,7 +10,7 @@ import { Quote } from "lucide-react";
 export const metadata: Metadata = {
   title: "Über uns",
   description:
-    "Erfahren Sie mehr über Sprungtuch e.V. — über 35 Jahre Engagement für Vielfalt, Inklusion und ein respektvolles Miteinander in Lübeck.",
+    "Erfahren Sie mehr über Sprungtuch e.V.: über 35 Jahre Engagement für Vielfalt, Inklusion und ein respektvolles Miteinander in Lübeck.",
   openGraph: {
     title: "Über uns | Sprungtuch e.V.",
     description:
@@ -23,7 +23,7 @@ export default function UeberUnsPage() {
     <>
       <PageHero
         title="Über uns"
-        subtitle="Seit über 35 Jahren setzen wir uns in Lübeck für ein vielfältiges und respektvolles Miteinander ein — mit Herz, Haltung und Kompetenz."
+        subtitle="Seit über 35 Jahren setzen wir uns in Lübeck für ein vielfältiges und respektvolles Miteinander ein, mit Herz, Haltung und Kompetenz."
         variant="warm"
       />
 
@@ -48,7 +48,7 @@ export default function UeberUnsPage() {
               <p className="mt-6 text-warm-600 dark:text-warm-400 leading-relaxed">
                 Sprungtuch e.V. steht für eine offene, inklusive Gesellschaft.
                 Wir begleiten Menschen in unterschiedlichen Lebenssituationen und
-                fördern ein respektvolles Zusammenleben — unabhängig von
+                fördern ein respektvolles Zusammenleben, unabhängig von
                 Herkunft, Sprache oder sozialer Lage. Unser Team vereint über 30
                 Prozent mehrsprachige Mitarbeitende aus verschiedenen Kulturen
                 und bringt damit die Vielfalt, die wir leben, direkt in unsere

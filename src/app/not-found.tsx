@@ -52,7 +52,7 @@ export default function NotFound() {
         className="mt-3 max-w-md text-center text-warm-600"
       >
         Die Seite, die Sie suchen, existiert leider nicht oder wurde verschoben.
-        Kein Problem — wir bringen Sie zurück auf die richtige Spur!
+        Kein Problem, wir bringen Sie zurück auf die richtige Spur!
       </motion.p>
 
       {/* Zurück-Button */}

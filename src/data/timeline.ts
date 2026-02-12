@@ -8,12 +8,12 @@ export const timelineEvents: TimelineEvent[] = [
   {
     year: 1989,
     title: "Gründung",
-    description: "Sprungtuch e.V. wird in Lübeck gegründet — mit der Vision, Vielfalt als Stärke zu leben.",
+    description: "Sprungtuch e.V. wird in Lübeck gegründet, mit der Vision, Vielfalt als Stärke zu leben.",
   },
   {
     year: 1995,
     title: "Erste Familienhilfe",
-    description: "Start der sozialpädagogischen Familienhilfe — der Grundstein für unser heutiges Angebot.",
+    description: "Start der sozialpädagogischen Familienhilfe. Der Grundstein für unser heutiges Angebot.",
   },
   {
     year: 2002,
@@ -28,7 +28,7 @@ export const timelineEvents: TimelineEvent[] = [
   {
     year: 2015,
     title: "Sprach- und Kulturmittlung",
-    description: "Aufbau des mehrsprachigen Vermittlungsdienstes — heute in über 7 Sprachen.",
+    description: "Aufbau des mehrsprachigen Vermittlungsdienstes, heute in über 7 Sprachen.",
   },
   {
     year: 2020,

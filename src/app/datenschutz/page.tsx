@@ -5,11 +5,11 @@ import Section from "@/components/layout/Section";
 export const metadata: Metadata = {
   title: "Datenschutz",
   description:
-    "Datenschutzerklärung von Sprungtuch e.V. Lübeck — Informationen zum Schutz Ihrer personenbezogenen Daten.",
+    "Datenschutzerklärung von Sprungtuch e.V. Lübeck. Informationen zum Schutz Ihrer personenbezogenen Daten.",
   openGraph: {
     title: "Datenschutz | Sprungtuch e.V.",
     description:
-      "Datenschutzerklärung von Sprungtuch e.V. Lübeck — Informationen zum Schutz Ihrer personenbezogenen Daten.",
+      "Datenschutzerklärung von Sprungtuch e.V. Lübeck. Informationen zum Schutz Ihrer personenbezogenen Daten.",
   },
 };
 

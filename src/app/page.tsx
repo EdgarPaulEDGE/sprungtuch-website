@@ -8,11 +8,11 @@ import Section from "@/components/layout/Section";
 import { serviceAreas } from "@/data/services";
 
 export const metadata: Metadata = {
-  title: "Sprungtuch e.V. — Vielfalt in Bewegung | Sozialpädagogik in Lübeck",
+  title: "Sprungtuch e.V. | Vielfalt in Bewegung | Sozialpädagogik in Lübeck",
   description:
-    "Sprungtuch e.V. Lübeck — Sozialpädagogische Projekte für Familien, Kinder und Jugendliche. Inklusion, Engagement und ein respektvolles Miteinander seit 1989.",
+    "Sprungtuch e.V. Lübeck: Sozialpädagogische Projekte für Familien, Kinder und Jugendliche. Inklusion, Engagement und ein respektvolles Miteinander seit 1989.",
   openGraph: {
-    title: "Sprungtuch e.V. — Vielfalt in Bewegung",
+    title: "Sprungtuch e.V. | Vielfalt in Bewegung",
     description:
       "Sozialpädagogische Projekte für Familien, Kinder und ein respektvolles Miteinander in Lübeck. Seit 1989.",
   },
@@ -29,7 +29,7 @@ export default function Home() {
             Unsere Angebote
           </h2>
           <p className="mt-4 text-lg text-warm-600 dark:text-warm-400 max-w-2xl mx-auto">
-            Wir begleiten Menschen in verschiedenen Lebenssituationen — mit Herz, Kompetenz und Respekt.
+            Wir begleiten Menschen in verschiedenen Lebenssituationen, mit Herz, Kompetenz und Respekt.
           </p>
         </div>
         <div className="grid gap-8 md:grid-cols-3">

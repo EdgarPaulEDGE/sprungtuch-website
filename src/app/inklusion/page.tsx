@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Inklusion & Teilhabe | Sprungtuch e.V.",
     description:
-      "Eingliederungshilfe, Sprach- und Kulturmittlung — wir fördern gleichberechtigte Teilhabe in Lübeck.",
+      "Eingliederungshilfe, Sprach- und Kulturmittlung. Wir fördern gleichberechtigte Teilhabe in Lübeck.",
   },
 };
 

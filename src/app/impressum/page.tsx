@@ -5,11 +5,11 @@ import Section from "@/components/layout/Section";
 export const metadata: Metadata = {
   title: "Impressum",
   description:
-    "Impressum von Sprungtuch e.V. Lübeck — Angaben gemäß § 5 TMG, Kontaktdaten und rechtliche Hinweise.",
+    "Impressum von Sprungtuch e.V. Lübeck. Angaben gemäß § 5 TMG, Kontaktdaten und rechtliche Hinweise.",
   openGraph: {
     title: "Impressum | Sprungtuch e.V.",
     description:
-      "Impressum von Sprungtuch e.V. Lübeck — Angaben gemäß § 5 TMG, Kontaktdaten und rechtliche Hinweise.",
+      "Impressum von Sprungtuch e.V. Lübeck. Angaben gemäß § 5 TMG, Kontaktdaten und rechtliche Hinweise.",
   },
 };
 

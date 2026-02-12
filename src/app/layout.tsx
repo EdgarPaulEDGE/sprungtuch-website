@@ -14,11 +14,11 @@ const plusJakarta = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Sprungtuch e.V. — Vielfalt in Bewegung",
+    default: "Sprungtuch e.V. | Vielfalt in Bewegung",
     template: "%s | Sprungtuch e.V.",
   },
   description:
-    "Sprungtuch e.V. Lübeck — Sozialpädagogische Projekte für Familien, Kinder und ein respektvolles Miteinander. Seit 1989.",
+    "Sprungtuch e.V. Lübeck: Sozialpädagogische Projekte für Familien, Kinder und ein respektvolles Miteinander. Seit 1989.",
   keywords: [
     "Sprungtuch",
     "Lübeck",

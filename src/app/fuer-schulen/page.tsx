@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Für Schulen & Institutionen | Sprungtuch e.V.",
     description:
-      "Anti-Bias-Workshops, Gewaltprävention und mehr — praxisnahe Programme für Schulen und Einrichtungen in Lübeck.",
+      "Anti-Bias-Workshops, Gewaltprävention und mehr. Praxisnahe Programme für Schulen und Einrichtungen in Lübeck.",
   },
 };
 

@@ -11,11 +11,11 @@ import { childrenServices } from "@/data/services";
 export const metadata: Metadata = {
   title: "Für Kinder & Jugendliche",
   description:
-    "Von der Kita bis zur Jugendarbeit — wir schaffen Räume, in denen junge Menschen wachsen können. Sprungtuch e.V. Lübeck.",
+    "Von der Kita bis zur Jugendarbeit: Wir schaffen Räume, in denen junge Menschen wachsen können. Sprungtuch e.V. Lübeck.",
   openGraph: {
     title: "Für Kinder & Jugendliche | Sprungtuch e.V.",
     description:
-      "Kindertagesstätten, Schulsozialarbeit und Jugendprojekte — sichere Räume für junge Menschen in Lübeck.",
+      "Kindertagesstätten, Schulsozialarbeit und Jugendprojekte. Sichere Räume für junge Menschen in Lübeck.",
   },
 };
 

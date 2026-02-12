@@ -9,11 +9,11 @@ import { ContactForm } from "@/components/forms/ContactForm";
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Nehmen Sie Kontakt mit Sprungtuch e.V. in Lübeck auf — per Telefon, E-Mail oder über unser Kontaktformular.",
+    "Nehmen Sie Kontakt mit Sprungtuch e.V. in Lübeck auf, per Telefon, E-Mail oder über unser Kontaktformular.",
   openGraph: {
     title: "Kontakt | Sprungtuch e.V.",
     description:
-      "Kontaktieren Sie Sprungtuch e.V. in Lübeck — per Telefon, E-Mail oder Kontaktformular. Wir helfen Ihnen gerne.",
+      "Kontaktieren Sie Sprungtuch e.V. in Lübeck per Telefon, E-Mail oder Kontaktformular. Wir helfen Ihnen gerne.",
   },
 };
 
@@ -22,7 +22,7 @@ export default function KontaktPage() {
     <>
       <PageHero
         title="Kontakt"
-        subtitle="Wir freuen uns auf Ihre Nachricht — melden Sie sich gerne bei uns."
+        subtitle="Wir freuen uns auf Ihre Nachricht. Melden Sie sich gerne bei uns."
         variant="professional"
       />
 
