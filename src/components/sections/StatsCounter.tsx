@@ -1,10 +1,14 @@
 "use client";
 
-import { impactStats } from "@/data/stats";
+import type { Stat } from "@/data/stats";
 import { CountUp } from "@/components/motion/CountUp";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 
-export function StatsCounter() {
+interface StatsCounterProps {
+  stats: Stat[];
+}
+
+export function StatsCounter({ stats }: StatsCounterProps) {
   return (
     <section className="bg-blue-50 dark:bg-blue-900/30 py-20 px-6" aria-label="Statistiken">
       <div className="mx-auto max-w-5xl">
@@ -15,7 +19,7 @@ export function StatsCounter() {
         </ScrollReveal>
 
         <dl className="grid grid-cols-2 gap-6 lg:grid-cols-4 lg:gap-8">
-          {impactStats.map((stat, index) => (
+          {stats.map((stat, index) => (
             <ScrollReveal key={stat.label} delay={index * 0.1}>
               <div className="flex flex-col items-center rounded-2xl bg-white dark:bg-warm-800 p-6 text-center shadow-sm transition-shadow duration-300 hover:shadow-md sm:p-8">
                 <dt className="order-2 mt-3 text-sm font-medium text-warm-600 dark:text-warm-400 sm:text-base">

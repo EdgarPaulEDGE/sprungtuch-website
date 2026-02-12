@@ -5,7 +5,7 @@ import { ServiceCard } from "@/components/sections/ServiceCard";
 import { CTABand } from "@/components/sections/CTABand";
 import { PartnerLogoBar } from "@/components/sections/PartnerLogoBar";
 import Section from "@/components/layout/Section";
-import { serviceAreas } from "@/data/services";
+import { getServiceAreas, getImpactStats, getPartners, getNetworks } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
   title: "Sprungtuch e.V. | Vielfalt in Bewegung | Sozialpädagogik in Lübeck",
@@ -18,11 +18,18 @@ export const metadata: Metadata = {
   },
 };
 
-export default function Home() {
+export default async function Home() {
+  const [serviceAreas, stats, partners, networks] = await Promise.all([
+    getServiceAreas(),
+    getImpactStats(),
+    getPartners(),
+    getNetworks(),
+  ]);
+
   return (
     <>
       <HeroSection />
-      <StatsCounter />
+      <StatsCounter stats={stats} />
       <Section>
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-warm-800 dark:text-warm-100 sm:text-4xl">
@@ -46,7 +53,7 @@ export default function Home() {
         </div>
       </Section>
       <CTABand />
-      <PartnerLogoBar />
+      <PartnerLogoBar partners={partners} networks={networks} />
     </>
   );
 }

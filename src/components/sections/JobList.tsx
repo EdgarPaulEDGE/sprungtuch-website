@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { currentJobs } from "@/data/jobs";
+import type { Job } from "@/data/jobs";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import {
   ChevronDown,
@@ -13,7 +13,11 @@ import {
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-export function JobList() {
+interface JobListProps {
+  jobs: Job[];
+}
+
+export function JobList({ jobs }: JobListProps) {
   const [expandedJob, setExpandedJob] = useState<string | null>(null);
 
   const toggleJob = (id: string) => {
@@ -35,7 +39,7 @@ export function JobList() {
         </ScrollReveal>
 
         {/* Job-Karten */}
-        {currentJobs.length === 0 ? (
+        {jobs.length === 0 ? (
           <ScrollReveal>
             <div className="rounded-2xl border-2 border-dashed border-warm-200 dark:border-warm-700 p-12 text-center">
               <Briefcase size={48} className="mx-auto mb-4 text-warm-300 dark:text-warm-600" aria-hidden="true" />
@@ -49,7 +53,7 @@ export function JobList() {
           </ScrollReveal>
         ) : (
           <div className="flex flex-col gap-4">
-            {currentJobs.map((job, index) => {
+            {jobs.map((job, index) => {
               const isExpanded = expandedJob === job.id;
 
               return (

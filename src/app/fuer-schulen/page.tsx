@@ -6,7 +6,7 @@ import Section from "@/components/layout/Section";
 import { ServiceDetailCard } from "@/components/shared/ServiceDetailCard";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
-import { schoolServices } from "@/data/services";
+import { getSchoolServices } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
   title: "Für Schulen & Institutionen",
@@ -41,7 +41,9 @@ const highlights = [
   },
 ];
 
-export default function FuerSchulenPage() {
+export default async function FuerSchulenPage() {
+  const schoolServices = await getSchoolServices();
+
   return (
     <>
       <PageHero

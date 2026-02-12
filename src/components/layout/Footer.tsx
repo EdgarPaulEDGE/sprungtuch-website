@@ -3,9 +3,11 @@ import Image from "next/image";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { footerNavigation } from "@/data/navigation";
-import { contactInfo } from "@/data/contact";
+import { getContactInfo } from "@/lib/sanity/queries";
 
-export default function Footer() {
+export default async function Footer() {
+  const contactInfo = await getContactInfo();
+
   return (
     <footer className="bg-warm-100 dark:bg-warm-900" role="contentinfo" aria-label="Seitenfuss">
       {/* Hauptbereich */}

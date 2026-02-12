@@ -6,7 +6,7 @@ import Section from "@/components/layout/Section";
 import { ServiceDetailCard } from "@/components/shared/ServiceDetailCard";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
-import { childrenServices } from "@/data/services";
+import { getChildrenServices } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
   title: "Für Kinder & Jugendliche",
@@ -19,15 +19,17 @@ export const metadata: Metadata = {
   },
 };
 
-// Die ersten beiden Eintraege sind die KITAs
-const kitaServices = childrenServices.filter((s) =>
-  ["buntekuh", "lauerholz"].includes(s.id)
-);
-const otherServices = childrenServices.filter(
-  (s) => !["buntekuh", "lauerholz"].includes(s.id)
-);
+export default async function FuerKinderPage() {
+  const childrenServices = await getChildrenServices();
 
-export default function FuerKinderPage() {
+  // Die ersten beiden Eintraege sind die KITAs
+  const kitaServices = childrenServices.filter((s) =>
+    ["buntekuh", "lauerholz"].includes(s.id)
+  );
+  const otherServices = childrenServices.filter(
+    (s) => !["buntekuh", "lauerholz"].includes(s.id)
+  );
+
   return (
     <>
       <PageHero

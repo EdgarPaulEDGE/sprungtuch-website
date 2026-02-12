@@ -6,7 +6,7 @@ import Section from "@/components/layout/Section";
 import { ServiceDetailCard } from "@/components/shared/ServiceDetailCard";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
-import { familyServices } from "@/data/services";
+import { getFamilyServices } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
   title: "Für Familien",
@@ -19,7 +19,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function FuerFamilienPage() {
+export default async function FuerFamilienPage() {
+  const familyServices = await getFamilyServices();
+
   return (
     <>
       <PageHero

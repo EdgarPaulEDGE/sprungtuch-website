@@ -1,10 +1,14 @@
 "use client";
 
-import { timelineEvents } from "@/data/timeline";
+import type { TimelineEvent } from "@/data/timeline";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { cn } from "@/lib/utils";
 
-export function Timeline() {
+interface TimelineProps {
+  events: TimelineEvent[];
+}
+
+export function Timeline({ events }: TimelineProps) {
   return (
     <section className="py-20 px-6">
       <div className="mx-auto max-w-4xl">
@@ -24,7 +28,7 @@ export function Timeline() {
           <div className="absolute left-6 top-0 h-full w-0.5 bg-blue-200/60 md:left-1/2 md:-translate-x-px" />
 
           <div className="flex flex-col gap-12">
-            {timelineEvents.map((event, index) => {
+            {events.map((event, index) => {
               const isLeft = index % 2 === 0;
 
               return (

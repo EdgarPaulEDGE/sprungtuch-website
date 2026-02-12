@@ -6,6 +6,7 @@ import { TeamGrid } from "@/components/sections/TeamGrid";
 import { StatsCounter } from "@/components/sections/StatsCounter";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { Quote } from "lucide-react";
+import { getImpactStats, getTeamLeadership, getTeamDepartments, getTimelineEvents } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
   title: "Über uns",
@@ -18,7 +19,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default function UeberUnsPage() {
+export default async function UeberUnsPage() {
+  const [stats, leadership, departments, timelineEvents] = await Promise.all([
+    getImpactStats(),
+    getTeamLeadership(),
+    getTeamDepartments(),
+    getTimelineEvents(),
+  ]);
+
   return (
     <>
       <PageHero
@@ -61,16 +69,16 @@ export default function UeberUnsPage() {
 
       {/* Timeline — Geschichte */}
       <Section background="alt">
-        <Timeline />
+        <Timeline events={timelineEvents} />
       </Section>
 
       {/* Team */}
       <Section>
-        <TeamGrid />
+        <TeamGrid leadership={leadership} departments={departments} />
       </Section>
 
       {/* Statistiken */}
-      <StatsCounter />
+      <StatsCounter stats={stats} />
     </>
   );
 }

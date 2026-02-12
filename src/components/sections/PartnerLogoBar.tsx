@@ -1,7 +1,7 @@
 "use client";
 
 import { ExternalLink } from "lucide-react";
-import { partners, networks, type Partner } from "@/data/partners";
+import type { Partner } from "@/data/partners";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 
 // Einzelner Partner-Chip — mit oder ohne Link
@@ -41,7 +41,12 @@ function PartnerChip({ partner }: { partner: Partner }) {
   );
 }
 
-export function PartnerLogoBar() {
+interface PartnerLogoBarProps {
+  partners: Partner[];
+  networks: Partner[];
+}
+
+export function PartnerLogoBar({ partners, networks }: PartnerLogoBarProps) {
   // Duplikate fuer nahtlose Endlosschleife
   const duplicatedPartners = [...partners, ...partners];
   const duplicatedNetworks = [...networks, ...networks];

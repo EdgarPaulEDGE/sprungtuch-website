@@ -2,12 +2,16 @@
 
 import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { testimonials } from "@/data/testimonials";
+import type { Testimonial } from "@/data/testimonials";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { Quote } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-export function TestimonialCarousel() {
+interface TestimonialCarouselProps {
+  testimonials: Testimonial[];
+}
+
+export function TestimonialCarousel({ testimonials }: TestimonialCarouselProps) {
   const [current, setCurrent] = useState(0);
 
   const next = useCallback(() => {

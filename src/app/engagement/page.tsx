@@ -6,7 +6,7 @@ import Section from "@/components/layout/Section";
 import { ServiceDetailCard } from "@/components/shared/ServiceDetailCard";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
-import { engagementServices } from "@/data/services";
+import { getEngagementServices } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
   title: "Engagement & Demokratie",
@@ -19,7 +19,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function EngagementPage() {
+export default async function EngagementPage() {
+  const engagementServices = await getEngagementServices();
+
   return (
     <>
       <PageHero

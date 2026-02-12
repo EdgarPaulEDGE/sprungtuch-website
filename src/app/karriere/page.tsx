@@ -5,7 +5,7 @@ import { BenefitCard } from "@/components/shared/BenefitCard";
 import { JobList } from "@/components/sections/JobList";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
-import { benefits } from "@/data/jobs";
+import { getBenefits, getCurrentJobs } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
   title: "Karriere",
@@ -18,7 +18,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function KarrierePage() {
+export default async function KarrierePage() {
+  const [benefits, jobs] = await Promise.all([getBenefits(), getCurrentJobs()]);
+
   return (
     <>
       <PageHero
@@ -52,7 +54,7 @@ export default function KarrierePage() {
 
       {/* Offene Stellen */}
       <Section background="alt">
-        <JobList />
+        <JobList jobs={jobs} />
       </Section>
 
       {/* Bewerbungsprozess */}

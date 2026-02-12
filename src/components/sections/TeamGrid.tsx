@@ -1,11 +1,16 @@
 "use client";
 
-import { leadership, departments } from "@/data/team";
+import type { TeamMember } from "@/data/team";
 import { PersonCard } from "@/components/shared/PersonCard";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { StaggerChildren } from "@/components/motion/StaggerChildren";
 
-export function TeamGrid() {
+interface TeamGridProps {
+  leadership: TeamMember[];
+  departments: TeamMember[];
+}
+
+export function TeamGrid({ leadership, departments }: TeamGridProps) {
   return (
     <section className="py-20 px-6">
       <div className="mx-auto max-w-5xl">

@@ -6,7 +6,7 @@ import Section from "@/components/layout/Section";
 import { ServiceDetailCard } from "@/components/shared/ServiceDetailCard";
 import { ProcessSteps } from "@/components/sections/ProcessSteps";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
-import { inclusionServices } from "@/data/services";
+import { getInclusionServices } from "@/lib/sanity/queries";
 
 export const metadata: Metadata = {
   title: "Inklusion & Teilhabe",
@@ -30,7 +30,9 @@ const languages = [
   "Englisch",
 ];
 
-export default function InklusionPage() {
+export default async function InklusionPage() {
+  const inclusionServices = await getInclusionServices();
+
   return (
     <>
       <PageHero

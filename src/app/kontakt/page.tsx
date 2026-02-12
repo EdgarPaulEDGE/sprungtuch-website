@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Clock, Printer } from "lucide-react";
 import PageHero from "@/components/layout/PageHero";
 import Section from "@/components/layout/Section";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
-import { contactInfo } from "@/data/contact";
+import { getContactInfo } from "@/lib/sanity/queries";
 import { ContactForm } from "@/components/forms/ContactForm";
 
 export const metadata: Metadata = {
@@ -17,7 +17,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function KontaktPage() {
+export default async function KontaktPage() {
+  const contactInfo = await getContactInfo();
+
   return (
     <>
       <PageHero
