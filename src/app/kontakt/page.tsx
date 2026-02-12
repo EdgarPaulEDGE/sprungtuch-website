@@ -105,7 +105,7 @@ export default function KontaktPage() {
 
                   <div className="flex items-center gap-3 rounded-xl border border-warm-200 dark:border-warm-700 bg-white dark:bg-warm-800 p-4 text-warm-700 dark:text-warm-300">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 dark:bg-blue-900/30">
-                      <Clock size={18} className="text-brand-blue" />
+                      <Clock size={18} className="text-brand-blue" aria-hidden="true" />
                     </div>
                     <div>
                       <p className="text-xs font-medium text-warm-500 dark:text-warm-400">

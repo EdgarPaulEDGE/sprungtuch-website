@@ -13,8 +13,8 @@ export function Timeline() {
             Unsere Geschichte
           </h2>
           <p className="mx-auto mb-16 max-w-xl text-center text-warm-600 dark:text-warm-400">
-            Von der Gruendung 1989 bis heute: ueber drei Jahrzehnte
-            Engagement fuer Vielfalt und Zusammenhalt.
+            Von der Gründung 1989 bis heute: über drei Jahrzehnte
+            Engagement für Vielfalt und Zusammenhalt.
           </p>
         </ScrollReveal>
 
@@ -56,7 +56,7 @@ export function Timeline() {
                     {/* Inhalt-Karte */}
                     <div
                       className={cn(
-                        "flex-1 rounded-xl bg-white p-6 shadow-sm transition-shadow duration-300 hover:shadow-md",
+                        "flex-1 rounded-xl bg-white dark:bg-warm-800 p-6 shadow-sm transition-shadow duration-300 hover:shadow-md",
                         // Desktop: links oder rechts der Mittellinie
                         isLeft
                           ? "md:mr-[calc(50%+2rem)] md:text-right"
@@ -66,10 +66,10 @@ export function Timeline() {
                       <span className="mb-1 inline-block text-xs font-semibold text-brand-blue md:hidden">
                         {event.year}
                       </span>
-                      <h3 className="mb-2 text-lg font-bold text-warm-800">
+                      <h3 className="mb-2 text-lg font-bold text-warm-800 dark:text-warm-200">
                         {event.title}
                       </h3>
-                      <p className="text-sm leading-relaxed text-warm-600">
+                      <p className="text-sm leading-relaxed text-warm-600 dark:text-warm-400">
                         {event.description}
                       </p>
                     </div>

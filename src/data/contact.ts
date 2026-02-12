@@ -19,5 +19,5 @@ export const contactInfo: ContactInfo = {
   phone: "0451 7060434",
   fax: "0451 7020417",
   email: "info@sprungtuchev.de",
-  hours: "Montag – Freitag, 9:00 – 16:00 Uhr",
+  hours: "Montag bis Freitag, 9:00 bis 16:00 Uhr",
 };

@@ -39,7 +39,7 @@ export default function NotFound() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.25 }}
-        className="mt-4 text-2xl font-bold text-warm-800 sm:text-3xl"
+        className="mt-4 text-2xl font-bold text-warm-800 dark:text-warm-200 sm:text-3xl"
       >
         Seite nicht gefunden
       </motion.h1>
@@ -49,7 +49,7 @@ export default function NotFound() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.35 }}
-        className="mt-3 max-w-md text-center text-warm-600"
+        className="mt-3 max-w-md text-center text-warm-600 dark:text-warm-400"
       >
         Die Seite, die Sie suchen, existiert leider nicht oder wurde verschoben.
         Kein Problem, wir bringen Sie zurück auf die richtige Spur!
