@@ -19,7 +19,7 @@ export function CTABand() {
             </h3>
             <p className="mb-6 max-w-md text-red-100 dark:text-red-200">
               Wir suchen engagierte Menschen, die Vielfalt leben und Familien
-              begleiten moechten.
+              begleiten möchten.
             </p>
             <Link
               href="/karriere"
@@ -42,8 +42,8 @@ export function CTABand() {
               Kontaktiere uns
             </h3>
             <p className="mb-6 max-w-md text-red-100 dark:text-red-200">
-              Fragen zu unseren Angeboten? Wir sind gerne fuer dich da
-              — telefonisch, per E-Mail oder persoenlich.
+              Fragen zu unseren Angeboten? Wir sind gerne für dich da
+              telefonisch, per E-Mail oder persönlich.
             </p>
             <Link
               href="/kontakt"

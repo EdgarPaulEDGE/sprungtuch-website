@@ -23,19 +23,19 @@ export default function FuerFamilienPage() {
   return (
     <>
       <PageHero
-        title="Fur Familien"
-        subtitle="Wir begleiten Familien in schwierigen Lebenssituationen -- individuell, wertschatzend und mit Herz."
+        title="Für Familien"
+        subtitle="Wir begleiten Familien in schwierigen Lebenssituationen, individuell, wertschätzend und mit Herz."
         variant="warm"
       />
 
       {/* Prozess-Schritte: So kommen Sie zu uns */}
       <Section>
         <ScrollReveal>
-          <h2 className="mb-2 text-center text-3xl font-bold text-warm-800">
+          <h2 className="mb-2 text-center text-3xl font-bold text-warm-800 dark:text-warm-200">
             So kommen Sie zu uns
           </h2>
-          <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600">
-            Der Weg zu unserer Unterstutzung ist einfach und unkompliziert.
+          <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600 dark:text-warm-400">
+            Der Weg zu unserer Unterstützung ist einfach und unkompliziert.
           </p>
         </ScrollReveal>
         <ProcessSteps
@@ -43,31 +43,31 @@ export default function FuerFamilienPage() {
             {
               title: "Kontakt aufnehmen",
               description:
-                "Rufen Sie uns an oder schreiben Sie uns -- unverbindlich und vertraulich.",
+                "Rufen Sie uns an oder schreiben Sie uns. Unverbindlich und vertraulich.",
             },
             {
-              title: "Erstgesprach",
+              title: "Erstgespräch",
               description:
-                "Wir lernen Ihre Situation kennen und besprechen gemeinsam mogliche Hilfen.",
+                "Wir lernen Ihre Situation kennen und besprechen gemeinsam mögliche Hilfen.",
             },
             {
               title: "Begleitung",
               description:
-                "Unsere Fachkrafte begleiten Sie individuell -- direkt bei Ihnen vor Ort.",
+                "Unsere Fachkräfte begleiten Sie individuell, direkt bei Ihnen vor Ort.",
             },
           ]}
         />
       </Section>
 
-      {/* Angebote fur Familien */}
+      {/* Angebote für Familien */}
       <Section background="alt">
         <ScrollReveal>
-          <h2 className="mb-2 text-3xl font-bold text-warm-800">
-            Unsere Angebote fur Familien
+          <h2 className="mb-2 text-3xl font-bold text-warm-800 dark:text-warm-200">
+            Unsere Angebote für Familien
           </h2>
-          <p className="mb-10 max-w-2xl text-warm-600">
-            Von der Sozialpadagogischen Familienhilfe bis zum Projekt
-            Familienanker -- wir bieten vielfältige Unterstutzung fur jede
+          <p className="mb-10 max-w-2xl text-warm-600 dark:text-warm-400">
+            Von der Sozialpädagogischen Familienhilfe bis zum Projekt
+            Familienanker: Wir bieten vielfältige Unterstützung für jede
             Lebenslage.
           </p>
         </ScrollReveal>
@@ -86,11 +86,11 @@ export default function FuerFamilienPage() {
               <Phone size={28} className="text-white" />
             </div>
             <h2 className="mb-3 text-3xl font-bold text-white">
-              Wir sind fur Sie da
+              Wir sind für Sie da
             </h2>
             <p className="mx-auto mb-8 max-w-xl text-red-100">
-              Sie haben Fragen zu unseren Familienangeboten oder mochten ein
-              unverbindliches Erstgesprach vereinbaren? Kontaktieren Sie uns --
+              Sie haben Fragen zu unseren Familienangeboten oder möchten ein
+              unverbindliches Erstgespräch vereinbaren? Kontaktieren Sie uns,
               wir helfen Ihnen gerne weiter.
             </p>
             <Link

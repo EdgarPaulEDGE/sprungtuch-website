@@ -2,35 +2,16 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { currentJobs, benefits } from "@/data/jobs";
+import { currentJobs } from "@/data/jobs";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
-import { StaggerChildren } from "@/components/motion/StaggerChildren";
-import { IconCircle } from "@/components/brand/IconCircle";
 import {
   ChevronDown,
   ArrowRight,
-  Users,
-  Globe,
-  Heart,
-  BookOpen,
-  MapPin,
-  Award,
   Briefcase,
   CheckCircle2,
 } from "lucide-react";
-import type { LucideIcon } from "lucide-react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-
-// Icon-Map fuer Benefits
-const benefitIconMap: Record<string, LucideIcon> = {
-  Users,
-  Globe,
-  Heart,
-  BookOpen,
-  MapPin,
-  Award,
-};
 
 export function JobList() {
   const [expandedJob, setExpandedJob] = useState<string | null>(null);
@@ -51,39 +32,6 @@ export function JobList() {
             Werde Teil eines engagierten Teams und gestalte mit uns
             ein respektvolles Miteinander in Lübeck.
           </p>
-        </ScrollReveal>
-
-        {/* Benefits Grid */}
-        <ScrollReveal className="mb-16">
-          <div className="rounded-2xl bg-blue-50 dark:bg-blue-900/30 p-8">
-            <h3 className="mb-6 text-center text-xl font-semibold text-warm-800 dark:text-warm-200">
-              Das bieten wir
-            </h3>
-            <StaggerChildren
-              className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
-              staggerDelay={0.08}
-            >
-              {benefits.map((benefit) => {
-                const BenefitIcon = benefitIconMap[benefit.icon] ?? Heart;
-                return (
-                  <div
-                    key={benefit.title}
-                    className="flex items-start gap-3 rounded-xl bg-white dark:bg-warm-800 p-4"
-                  >
-                    <IconCircle icon={BenefitIcon} color="blue" size="sm" />
-                    <div>
-                      <p className="text-sm font-semibold text-warm-800 dark:text-warm-200">
-                        {benefit.title}
-                      </p>
-                      <p className="mt-0.5 text-xs text-warm-500 dark:text-warm-400">
-                        {benefit.description}
-                      </p>
-                    </div>
-                  </div>
-                );
-              })}
-            </StaggerChildren>
-          </div>
         </ScrollReveal>
 
         {/* Job-Karten */}

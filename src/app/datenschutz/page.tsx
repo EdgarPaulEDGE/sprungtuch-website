@@ -23,13 +23,13 @@ export default function DatenschutzPage() {
           <article className="prose prose-warm max-w-none space-y-8">
             {/* Verantwortliche Stelle */}
             <div>
-              <h2 className="text-2xl font-bold text-warm-800">
+              <h2 className="text-2xl font-bold text-warm-800 dark:text-warm-200">
                 1. Verantwortliche Stelle
               </h2>
-              <p className="mt-3 text-warm-700 leading-relaxed">
+              <p className="mt-3 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Verantwortlich für die Datenverarbeitung auf dieser Website ist:
               </p>
-              <p className="mt-2 text-warm-700 leading-relaxed">
+              <p className="mt-2 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Sprungtuch e.V.
                 <br />
                 Wahmstraße 43-45
@@ -44,14 +44,14 @@ export default function DatenschutzPage() {
 
             {/* Allgemeine Hinweise */}
             <div>
-              <h2 className="text-2xl font-bold text-warm-800">
+              <h2 className="text-2xl font-bold text-warm-800 dark:text-warm-200">
                 2. Allgemeine Hinweise und Pflichtinformationen
               </h2>
 
-              <h3 className="mt-4 text-lg font-semibold text-warm-800">
+              <h3 className="mt-4 text-lg font-semibold text-warm-800 dark:text-warm-200">
                 Datenschutz
               </h3>
-              <p className="mt-2 text-warm-700 leading-relaxed">
+              <p className="mt-2 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir
                 behandeln Ihre personenbezogenen Daten vertraulich und
                 entsprechend der gesetzlichen Datenschutzvorschriften sowie
@@ -59,10 +59,10 @@ export default function DatenschutzPage() {
                 der Regel ohne Angabe personenbezogener Daten möglich.
               </p>
 
-              <h3 className="mt-4 text-lg font-semibold text-warm-800">
+              <h3 className="mt-4 text-lg font-semibold text-warm-800 dark:text-warm-200">
                 Hinweis zur verantwortlichen Stelle
               </h3>
-              <p className="mt-2 text-warm-700 leading-relaxed">
+              <p className="mt-2 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Die verantwortliche Stelle für die Datenverarbeitung auf dieser
                 Website ist im Abschnitt 1 genannt. Verantwortliche Stelle ist
                 die natürliche oder juristische Person, die allein oder gemeinsam
@@ -70,10 +70,10 @@ export default function DatenschutzPage() {
                 personenbezogenen Daten entscheidet.
               </p>
 
-              <h3 className="mt-4 text-lg font-semibold text-warm-800">
+              <h3 className="mt-4 text-lg font-semibold text-warm-800 dark:text-warm-200">
                 Widerruf Ihrer Einwilligung zur Datenverarbeitung
               </h3>
-              <p className="mt-2 text-warm-700 leading-relaxed">
+              <p className="mt-2 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Viele Datenverarbeitungsvorgänge sind nur mit Ihrer
                 ausdrücklichen Einwilligung möglich. Sie können eine bereits
                 erteilte Einwilligung jederzeit widerrufen. Dazu reicht eine
@@ -82,20 +82,20 @@ export default function DatenschutzPage() {
                 unberührt.
               </p>
 
-              <h3 className="mt-4 text-lg font-semibold text-warm-800">
+              <h3 className="mt-4 text-lg font-semibold text-warm-800 dark:text-warm-200">
                 Recht auf Beschwerde bei der zuständigen Aufsichtsbehörde
               </h3>
-              <p className="mt-2 text-warm-700 leading-relaxed">
+              <p className="mt-2 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Im Falle datenschutzrechtlicher Verstöße steht dem Betroffenen
                 ein Beschwerderecht bei der zuständigen Aufsichtsbehörde zu.
                 Zuständige Aufsichtsbehörde ist das Unabhängige Landeszentrum
                 für Datenschutz Schleswig-Holstein (ULD).
               </p>
 
-              <h3 className="mt-4 text-lg font-semibold text-warm-800">
+              <h3 className="mt-4 text-lg font-semibold text-warm-800 dark:text-warm-200">
                 Recht auf Auskunft, Berichtigung, Sperrung und Löschung
               </h3>
-              <p className="mt-2 text-warm-700 leading-relaxed">
+              <p className="mt-2 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Sie haben jederzeit das Recht auf unentgeltliche Auskunft über
                 Ihre gespeicherten personenbezogenen Daten, deren Herkunft und
                 Empfänger und den Zweck der Datenverarbeitung sowie ein Recht
@@ -108,14 +108,14 @@ export default function DatenschutzPage() {
 
             {/* Datenerfassung auf dieser Website */}
             <div>
-              <h2 className="text-2xl font-bold text-warm-800">
+              <h2 className="text-2xl font-bold text-warm-800 dark:text-warm-200">
                 3. Datenerfassung auf dieser Website
               </h2>
 
-              <h3 className="mt-4 text-lg font-semibold text-warm-800">
+              <h3 className="mt-4 text-lg font-semibold text-warm-800 dark:text-warm-200">
                 Cookies
               </h3>
-              <p className="mt-2 text-warm-700 leading-relaxed">
+              <p className="mt-2 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Unsere Internetseiten verwenden teilweise sogenannte Cookies.
                 Cookies richten auf Ihrem Rechner keinen Schaden an und
                 enthalten keine Viren. Cookies dienen dazu, unser Angebot
@@ -128,10 +128,10 @@ export default function DatenschutzPage() {
                 werden und Cookies nur im Einzelfall erlauben.
               </p>
 
-              <h3 className="mt-4 text-lg font-semibold text-warm-800">
+              <h3 className="mt-4 text-lg font-semibold text-warm-800 dark:text-warm-200">
                 Server-Log-Dateien
               </h3>
-              <p className="mt-2 text-warm-700 leading-relaxed">
+              <p className="mt-2 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Der Provider der Seiten erhebt und speichert automatisch
                 Informationen in sogenannten Server-Log-Dateien, die Ihr Browser
                 automatisch an uns übermittelt. Dies sind: Browsertyp und
@@ -142,10 +142,10 @@ export default function DatenschutzPage() {
                 erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.
               </p>
 
-              <h3 className="mt-4 text-lg font-semibold text-warm-800">
+              <h3 className="mt-4 text-lg font-semibold text-warm-800 dark:text-warm-200">
                 Kontaktformular
               </h3>
-              <p className="mt-2 text-warm-700 leading-relaxed">
+              <p className="mt-2 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Wenn Sie uns per Kontaktformular Anfragen zukommen lassen,
                 werden Ihre Angaben aus dem Anfrageformular inklusive der von
                 Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der
@@ -159,10 +159,10 @@ export default function DatenschutzPage() {
 
             {/* SSL/TLS-Verschlüsselung */}
             <div>
-              <h2 className="text-2xl font-bold text-warm-800">
+              <h2 className="text-2xl font-bold text-warm-800 dark:text-warm-200">
                 4. SSL- bzw. TLS-Verschlüsselung
               </h2>
-              <p className="mt-3 text-warm-700 leading-relaxed">
+              <p className="mt-3 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Diese Seite nutzt aus Sicherheitsgründen und zum Schutz der
                 Übertragung vertraulicher Inhalte eine SSL- bzw.
                 TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen

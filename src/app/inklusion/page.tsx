@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 // Sprachen, die unser Team spricht
 const languages = [
   "Deutsch",
-  "Turkisch",
+  "Türkisch",
   "Kurdisch",
   "Arabisch",
   "Polnisch",
@@ -35,14 +35,14 @@ export default function InklusionPage() {
     <>
       <PageHero
         title="Inklusion & Teilhabe"
-        subtitle="Wir setzen uns dafur ein, dass alle Menschen gleichberechtigt am gesellschaftlichen Leben teilhaben konnen -- unabhangig von Herkunft, Sprache oder Behinderung."
+        subtitle="Wir setzen uns dafür ein, dass alle Menschen gleichberechtigt am gesellschaftlichen Leben teilhaben können, unabhängig von Herkunft, Sprache oder Behinderung."
         variant="warm"
       />
 
       {/* Sprach-Feature: 7+ Sprachen */}
       <Section>
         <ScrollReveal>
-          <div className="mx-auto max-w-4xl rounded-2xl border border-warm-200 bg-gradient-to-br from-warm-50 to-white p-8 shadow-sm md:p-12">
+          <div className="mx-auto max-w-4xl rounded-2xl border border-warm-200 dark:border-warm-700 bg-gradient-to-br from-warm-50 to-white dark:from-warm-800 dark:to-warm-900 p-8 shadow-sm md:p-12">
             <div className="flex flex-col items-center text-center md:flex-row md:items-start md:text-left md:gap-10">
               {/* Icon */}
               <div className="mb-6 flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-brand-red/10 md:mb-0">
@@ -51,13 +51,13 @@ export default function InklusionPage() {
 
               {/* Inhalt */}
               <div>
-                <h2 className="mb-3 text-2xl font-bold text-warm-800 md:text-3xl">
+                <h2 className="mb-3 text-2xl font-bold text-warm-800 dark:text-warm-200 md:text-3xl">
                   Wir sprechen Ihre Sprache
                 </h2>
-                <p className="mb-6 text-warm-600 leading-relaxed">
-                  Unser mehrsprachiges Team uberbruckt sprachliche und kulturelle
-                  Barrieren. Wir begleiten Sie bei Behordenterminen, Arztbesuchen
-                  und Beratungsgesprachen -- in uber 7 Sprachen.
+                <p className="mb-6 text-warm-600 dark:text-warm-400 leading-relaxed">
+                  Unser mehrsprachiges Team überbrückt sprachliche und kulturelle
+                  Barrieren. Wir begleiten Sie bei Behördenterminen, Arztbesuchen
+                  und Beratungsgesprächen in über 7 Sprachen.
                 </p>
 
                 {/* Sprach-Tags */}
@@ -65,7 +65,7 @@ export default function InklusionPage() {
                   {languages.map((lang) => (
                     <span
                       key={lang}
-                      className="inline-flex items-center gap-1.5 rounded-full bg-warm-100 px-4 py-1.5 text-sm font-medium text-warm-700 transition-colors hover:bg-brand-red/10 hover:text-brand-red"
+                      className="inline-flex items-center gap-1.5 rounded-full bg-warm-100 dark:bg-warm-800 px-4 py-1.5 text-sm font-medium text-warm-700 dark:text-warm-300 transition-colors hover:bg-brand-red/10 hover:text-brand-red"
                     >
                       <Globe size={14} className="shrink-0" />
                       {lang}
@@ -81,10 +81,10 @@ export default function InklusionPage() {
       {/* Prozess-Schritte */}
       <Section background="alt">
         <ScrollReveal>
-          <h2 className="mb-2 text-center text-3xl font-bold text-warm-800">
-            So unterstutzen wir Sie
+          <h2 className="mb-2 text-center text-3xl font-bold text-warm-800 dark:text-warm-200">
+            So unterstützen wir Sie
           </h2>
-          <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600">
+          <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600 dark:text-warm-400">
             Der Zugang zu unseren Angeboten ist niedrigschwellig und
             unkompliziert.
           </p>
@@ -94,17 +94,17 @@ export default function InklusionPage() {
             {
               title: "Kontakt aufnehmen",
               description:
-                "Rufen Sie uns an oder schreiben Sie uns -- gerne auch in Ihrer Muttersprache.",
+                "Rufen Sie uns an oder schreiben Sie uns, gerne auch in Ihrer Muttersprache.",
             },
             {
-              title: "Bedarf klaren",
+              title: "Bedarf klären",
               description:
-                "Gemeinsam besprechen wir Ihre Situation und finden das passende Unterstutzungsangebot.",
+                "Gemeinsam besprechen wir Ihre Situation und finden das passende Unterstützungsangebot.",
             },
             {
               title: "Begleitung starten",
               description:
-                "Unsere Fachkrafte begleiten Sie individuell -- ob im Alltag, bei Behorden oder im Beruf.",
+                "Unsere Fachkräfte begleiten Sie individuell, ob im Alltag, bei Behörden oder im Beruf.",
             },
           ]}
         />
@@ -113,12 +113,12 @@ export default function InklusionPage() {
       {/* Unsere Angebote */}
       <Section>
         <ScrollReveal>
-          <h2 className="mb-2 text-3xl font-bold text-warm-800">
-            Unsere Angebote fur Inklusion & Teilhabe
+          <h2 className="mb-2 text-3xl font-bold text-warm-800 dark:text-warm-200">
+            Unsere Angebote für Inklusion & Teilhabe
           </h2>
-          <p className="mb-10 max-w-2xl text-warm-600">
+          <p className="mb-10 max-w-2xl text-warm-600 dark:text-warm-400">
             Von der ambulanten Eingliederungshilfe bis zur Sprach- und
-            Kulturmittlung -- wir offnen Turen und bauen Brucken.
+            Kulturmittlung. Wir öffnen Türen und bauen Brücken.
           </p>
         </ScrollReveal>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -139,9 +139,9 @@ export default function InklusionPage() {
               Wir helfen Ihnen gerne weiter
             </h2>
             <p className="mx-auto mb-8 max-w-xl text-red-100">
-              Benötigen Sie Unterstutzung im Alltag, bei Behordengangen oder
-              suchen Sie eine Sprach- und Kulturmittlung? Kontaktieren Sie uns --
-              wir sind fur Sie da.
+              Benötigen Sie Unterstützung im Alltag, bei Behördengängen oder
+              suchen Sie eine Sprach- und Kulturmittlung? Kontaktieren Sie uns,
+              wir sind für Sie da.
             </p>
             <Link
               href="/kontakt"

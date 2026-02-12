@@ -226,7 +226,7 @@ export default function Header() {
                     ? "text-white/80 hover:bg-white/10 hover:text-white"
                     : "text-warm-500 hover:bg-warm-100 hover:text-warm-700 dark:text-warm-400 dark:hover:bg-warm-800 dark:hover:text-warm-200"
                 )}
-                aria-label={isMobileMenuOpen ? "Menue schliessen" : "Menue oeffnen"}
+                aria-label={isMobileMenuOpen ? "Menü schließen" : "Menü öffnen"}
                 aria-expanded={isMobileMenuOpen}
                 aria-controls="mobile-menu-panel"
               >
@@ -309,7 +309,7 @@ export default function Header() {
                   <button
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="flex h-10 w-10 items-center justify-center rounded-lg text-warm-500 hover:bg-warm-100 dark:hover:bg-warm-800"
-                    aria-label="Menue schliessen"
+                    aria-label="Menü schließen"
                   >
                     <X className="h-5 w-5" aria-hidden="true" />
                   </button>

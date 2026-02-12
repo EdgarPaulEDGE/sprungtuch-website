@@ -59,56 +59,56 @@ export default function KontaktPage() {
             {/* Kontaktdaten */}
             <ScrollReveal delay={0.1}>
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-warm-800">
+                <h3 className="text-xl font-bold text-warm-800 dark:text-warm-200">
                   Kontaktdaten
                 </h3>
                 <div className="space-y-3">
                   <a
                     href={`tel:${contactInfo.phone.replace(/\s/g, "")}`}
-                    className="flex items-center gap-3 rounded-xl border border-warm-200 bg-white p-4 text-warm-700 transition-all duration-200 hover:border-brand-blue/30 hover:shadow-sm"
+                    className="flex items-center gap-3 rounded-xl border border-warm-200 dark:border-warm-700 bg-white dark:bg-warm-800 p-4 text-warm-700 dark:text-warm-300 transition-all duration-200 hover:border-brand-blue/30 hover:shadow-sm"
                   >
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 dark:bg-blue-900/30">
                       <Phone size={18} className="text-brand-blue" aria-hidden="true" />
                     </div>
                     <div>
-                      <p className="text-xs font-medium text-warm-500">
+                      <p className="text-xs font-medium text-warm-500 dark:text-warm-400">
                         Telefon
                       </p>
                       <p className="font-medium">{contactInfo.phone}</p>
                     </div>
                   </a>
 
-                  <div className="flex items-center gap-3 rounded-xl border border-warm-200 bg-white p-4 text-warm-700">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50">
+                  <div className="flex items-center gap-3 rounded-xl border border-warm-200 dark:border-warm-700 bg-white dark:bg-warm-800 p-4 text-warm-700 dark:text-warm-300">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 dark:bg-blue-900/30">
                       <Printer size={18} className="text-brand-blue" aria-hidden="true" />
                     </div>
                     <div>
-                      <p className="text-xs font-medium text-warm-500">Fax</p>
+                      <p className="text-xs font-medium text-warm-500 dark:text-warm-400">Fax</p>
                       <p className="font-medium">{contactInfo.fax}</p>
                     </div>
                   </div>
 
                   <a
                     href={`mailto:${contactInfo.email}`}
-                    className="flex items-center gap-3 rounded-xl border border-warm-200 bg-white p-4 text-warm-700 transition-all duration-200 hover:border-brand-blue/30 hover:shadow-sm"
+                    className="flex items-center gap-3 rounded-xl border border-warm-200 dark:border-warm-700 bg-white dark:bg-warm-800 p-4 text-warm-700 dark:text-warm-300 transition-all duration-200 hover:border-brand-blue/30 hover:shadow-sm"
                   >
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 dark:bg-blue-900/30">
                       <Mail size={18} className="text-brand-blue" aria-hidden="true" />
                     </div>
                     <div>
-                      <p className="text-xs font-medium text-warm-500">
+                      <p className="text-xs font-medium text-warm-500 dark:text-warm-400">
                         E-Mail
                       </p>
                       <p className="font-medium">{contactInfo.email}</p>
                     </div>
                   </a>
 
-                  <div className="flex items-center gap-3 rounded-xl border border-warm-200 bg-white p-4 text-warm-700">
-                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50">
+                  <div className="flex items-center gap-3 rounded-xl border border-warm-200 dark:border-warm-700 bg-white dark:bg-warm-800 p-4 text-warm-700 dark:text-warm-300">
+                    <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-blue-50 dark:bg-blue-900/30">
                       <Clock size={18} className="text-brand-blue" />
                     </div>
                     <div>
-                      <p className="text-xs font-medium text-warm-500">
+                      <p className="text-xs font-medium text-warm-500 dark:text-warm-400">
                         Öffnungszeiten
                       </p>
                       <p className="font-medium">{contactInfo.hours}</p>
@@ -121,11 +121,11 @@ export default function KontaktPage() {
 
           {/* Rechte Spalte: Kontaktformular */}
           <ScrollReveal delay={0.15} direction="right">
-            <div className="rounded-2xl border border-warm-200 bg-warm-50 p-6 md:p-8">
-              <h3 className="mb-2 text-xl font-bold text-warm-800">
+            <div className="rounded-2xl border border-warm-200 dark:border-warm-700 bg-warm-50 dark:bg-warm-900 p-6 md:p-8">
+              <h3 className="mb-2 text-xl font-bold text-warm-800 dark:text-warm-200">
                 Schreiben Sie uns
               </h3>
-              <p className="mb-6 text-sm text-warm-600">
+              <p className="mb-6 text-sm text-warm-600 dark:text-warm-400">
                 Füllen Sie das Formular aus und wir melden uns zeitnah bei
                 Ihnen.
               </p>

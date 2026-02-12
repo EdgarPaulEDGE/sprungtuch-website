@@ -31,21 +31,21 @@ export default function UeberUnsPage() {
       <Section>
         <ScrollReveal>
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="mb-8 text-3xl font-bold text-warm-800 sm:text-4xl">
+            <h2 className="mb-8 text-3xl font-bold text-warm-800 dark:text-warm-200 sm:text-4xl">
               Unser Leitbild
             </h2>
-            <div className="relative rounded-2xl bg-gradient-to-br from-blue-50 to-warm-50 p-8 md:p-12">
+            <div className="relative rounded-2xl bg-gradient-to-br from-blue-50 to-warm-50 dark:from-blue-900/20 dark:to-warm-800 p-8 md:p-12">
               {/* Dekoratives Anführungszeichen */}
               <Quote
                 size={48}
                 className="mx-auto mb-6 text-brand-blue/20"
                 aria-hidden="true"
               />
-              <blockquote className="text-xl font-medium leading-relaxed text-warm-800 md:text-2xl">
+              <blockquote className="text-xl font-medium leading-relaxed text-warm-800 dark:text-warm-200 md:text-2xl">
                 &bdquo;Wir betrachten die Vielfalt der Gesellschaft als große
                 Stärke&ldquo;
               </blockquote>
-              <p className="mt-6 text-warm-600 leading-relaxed">
+              <p className="mt-6 text-warm-600 dark:text-warm-400 leading-relaxed">
                 Sprungtuch e.V. steht für eine offene, inklusive Gesellschaft.
                 Wir begleiten Menschen in unterschiedlichen Lebenssituationen und
                 fördern ein respektvolles Zusammenleben — unabhängig von

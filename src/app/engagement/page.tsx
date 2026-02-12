@@ -24,61 +24,61 @@ export default function EngagementPage() {
     <>
       <PageHero
         title="Engagement & Demokratie"
-        subtitle="Demokratie lebt vom Mitmachen. Wir starken burgerschaftliches Engagement und setzen uns fur ein respektvolles Zusammenleben in Lubeck ein."
+        subtitle="Demokratie lebt vom Mitmachen. Wir stärken bürgerschaftliches Engagement und setzen uns für ein respektvolles Zusammenleben in Lübeck ein."
         variant="energetic"
       />
 
       {/* Warum Engagement wichtig ist */}
       <Section>
         <ScrollReveal>
-          <h2 className="mb-2 text-center text-3xl font-bold text-warm-800">
+          <h2 className="mb-2 text-center text-3xl font-bold text-warm-800 dark:text-warm-200">
             Gemeinsam Gesellschaft gestalten
           </h2>
-          <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600">
+          <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600 dark:text-warm-400">
             Ob Demokratieförderung, kultursensible Hospizbegleitung oder
-            ehrenamtliches Engagement -- jede:r kann etwas bewegen.
+            ehrenamtliches Engagement: Jede:r kann etwas bewegen.
           </p>
         </ScrollReveal>
         <div className="grid gap-8 md:grid-cols-3">
           <ScrollReveal delay={0}>
-            <div className="flex flex-col items-center rounded-xl border border-warm-200 bg-white p-8 text-center shadow-sm transition-shadow duration-300 hover:shadow-md">
-              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-red-50 text-brand-red">
+            <div className="flex flex-col items-center rounded-xl border border-warm-200 dark:border-warm-700 bg-white dark:bg-warm-800 p-8 text-center shadow-sm transition-shadow duration-300 hover:shadow-md">
+              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-red-50 dark:bg-red-900/20 text-brand-red">
                 <Megaphone size={28} />
               </div>
-              <h3 className="mb-2 text-lg font-semibold text-warm-800">
+              <h3 className="mb-2 text-lg font-semibold text-warm-800 dark:text-warm-200">
                 Stimme erheben
               </h3>
-              <p className="text-sm leading-relaxed text-warm-600">
+              <p className="text-sm leading-relaxed text-warm-600 dark:text-warm-400">
                 Demokratie braucht Menschen, die sich einbringen und Haltung
                 zeigen.
               </p>
             </div>
           </ScrollReveal>
           <ScrollReveal delay={0.1}>
-            <div className="flex flex-col items-center rounded-xl border border-warm-200 bg-white p-8 text-center shadow-sm transition-shadow duration-300 hover:shadow-md">
-              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-red-50 text-brand-red">
+            <div className="flex flex-col items-center rounded-xl border border-warm-200 dark:border-warm-700 bg-white dark:bg-warm-800 p-8 text-center shadow-sm transition-shadow duration-300 hover:shadow-md">
+              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-red-50 dark:bg-red-900/20 text-brand-red">
                 <Users size={28} />
               </div>
-              <h3 className="mb-2 text-lg font-semibold text-warm-800">
-                Gemeinschaft starken
+              <h3 className="mb-2 text-lg font-semibold text-warm-800 dark:text-warm-200">
+                Gemeinschaft stärken
               </h3>
-              <p className="text-sm leading-relaxed text-warm-600">
-                Zusammenhalt entsteht dort, wo Menschen fureinander da sind und
-                Verantwortung ubernehmen.
+              <p className="text-sm leading-relaxed text-warm-600 dark:text-warm-400">
+                Zusammenhalt entsteht dort, wo Menschen füreinander da sind und
+                Verantwortung übernehmen.
               </p>
             </div>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
-            <div className="flex flex-col items-center rounded-xl border border-warm-200 bg-white p-8 text-center shadow-sm transition-shadow duration-300 hover:shadow-md">
-              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-red-50 text-brand-red">
+            <div className="flex flex-col items-center rounded-xl border border-warm-200 dark:border-warm-700 bg-white dark:bg-warm-800 p-8 text-center shadow-sm transition-shadow duration-300 hover:shadow-md">
+              <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-red-50 dark:bg-red-900/20 text-brand-red">
                 <HeartHandshake size={28} />
               </div>
-              <h3 className="mb-2 text-lg font-semibold text-warm-800">
-                Wurde bewahren
+              <h3 className="mb-2 text-lg font-semibold text-warm-800 dark:text-warm-200">
+                Würde bewahren
               </h3>
-              <p className="text-sm leading-relaxed text-warm-600">
-                Kultursensible Begleitung am Lebensende -- fur alle Menschen,
-                unabhangig von Herkunft und Glauben.
+              <p className="text-sm leading-relaxed text-warm-600 dark:text-warm-400">
+                Kultursensible Begleitung am Lebensende, für alle Menschen,
+                unabhängig von Herkunft und Glauben.
               </p>
             </div>
           </ScrollReveal>
@@ -88,10 +88,10 @@ export default function EngagementPage() {
       {/* Prozess-Schritte */}
       <Section background="alt">
         <ScrollReveal>
-          <h2 className="mb-2 text-center text-3xl font-bold text-warm-800">
-            So konnen Sie sich engagieren
+          <h2 className="mb-2 text-center text-3xl font-bold text-warm-800 dark:text-warm-200">
+            So können Sie sich engagieren
           </h2>
-          <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600">
+          <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600 dark:text-warm-400">
             Der Einstieg ins Ehrenamt ist leichter als gedacht.
           </p>
         </ScrollReveal>
@@ -100,17 +100,17 @@ export default function EngagementPage() {
             {
               title: "Informieren",
               description:
-                "Erfahren Sie mehr uber unsere Projekte und finden Sie heraus, was zu Ihnen passt.",
+                "Erfahren Sie mehr über unsere Projekte und finden Sie heraus, was zu Ihnen passt.",
             },
             {
               title: "Kontakt aufnehmen",
               description:
-                "Melden Sie sich bei uns -- wir freuen uns uber Ihr Interesse und beraten Sie gerne.",
+                "Melden Sie sich bei uns. Wir freuen uns über Ihr Interesse und beraten Sie gerne.",
             },
             {
               title: "Loslegen",
               description:
-                "Wir begleiten Sie beim Einstieg und sorgen fur eine gute Vorbereitung.",
+                "Wir begleiten Sie beim Einstieg und sorgen für eine gute Vorbereitung.",
             },
           ]}
         />
@@ -119,12 +119,12 @@ export default function EngagementPage() {
       {/* Unsere Angebote */}
       <Section>
         <ScrollReveal>
-          <h2 className="mb-2 text-3xl font-bold text-warm-800">
+          <h2 className="mb-2 text-3xl font-bold text-warm-800 dark:text-warm-200">
             Unsere Projekte & Angebote
           </h2>
-          <p className="mb-10 max-w-2xl text-warm-600">
+          <p className="mb-10 max-w-2xl text-warm-600 dark:text-warm-400">
             Demokratieförderung, kultursensible Hospizbegleitung und vielfältige
-            Moglichkeiten, sich ehrenamtlich einzubringen.
+            Möglichkeiten, sich ehrenamtlich einzubringen.
           </p>
         </ScrollReveal>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
@@ -146,7 +146,7 @@ export default function EngagementPage() {
             </h2>
             <p className="mx-auto mb-8 max-w-xl text-red-100">
               Ob als ehrenamtliche:r Hospizbegleiter:in, bei Veranstaltungen
-              oder als Mentor:in -- es gibt viele Wege, sich bei Sprungtuch
+              oder als Mentor:in: Es gibt viele Wege, sich bei Sprungtuch
               einzubringen. Wir freuen uns auf Sie!
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">

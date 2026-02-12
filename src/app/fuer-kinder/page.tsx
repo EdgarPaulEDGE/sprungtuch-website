@@ -31,18 +31,18 @@ export default function FuerKinderPage() {
   return (
     <>
       <PageHero
-        title="Fur Kinder & Jugendliche"
-        subtitle="Von der Kita bis zur Jugendarbeit -- wir schaffen Raume, in denen junge Menschen wachsen, lernen und sich entfalten konnen."
+        title="Für Kinder & Jugendliche"
+        subtitle="Von der Kita bis zur Jugendarbeit: Wir schaffen Räume, in denen junge Menschen wachsen, lernen und sich entfalten können."
         variant="playful"
       />
 
-      {/* Unsere KITAs -- hervorgehobene Karten */}
+      {/* Unsere KITAs: hervorgehobene Karten */}
       <Section>
         <ScrollReveal>
-          <h2 className="mb-2 text-3xl font-bold text-warm-800">
-            Unsere Kindertagesstatten
+          <h2 className="mb-2 text-3xl font-bold text-warm-800 dark:text-warm-200">
+            Unsere Kindertagesstätten
           </h2>
-          <p className="mb-10 max-w-2xl text-warm-600">
+          <p className="mb-10 max-w-2xl text-warm-600 dark:text-warm-400">
             Zwei Orte, an denen Kinder Geborgenheit, Vielfalt und
             Entdeckungsfreude erleben.
           </p>
@@ -64,11 +64,11 @@ export default function FuerKinderPage() {
       {/* Prozess-Schritte */}
       <Section background="alt">
         <ScrollReveal>
-          <h2 className="mb-2 text-center text-3xl font-bold text-warm-800">
+          <h2 className="mb-2 text-center text-3xl font-bold text-warm-800 dark:text-warm-200">
             So begleiten wir junge Menschen
           </h2>
-          <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600">
-            Ob Kita-Platz, Schulsozialarbeit oder Jugendprojekt -- der Einstieg
+          <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600 dark:text-warm-400">
+            Ob Kita-Platz, Schulsozialarbeit oder Jugendprojekt, der Einstieg
             ist unkompliziert.
           </p>
         </ScrollReveal>
@@ -82,12 +82,12 @@ export default function FuerKinderPage() {
             {
               title: "Kennenlernen",
               description:
-                "Besuchen Sie unsere Einrichtung und lernen Sie unser Team und die Raume kennen.",
+                "Besuchen Sie unsere Einrichtung und lernen Sie unser Team und die Räume kennen.",
             },
             {
               title: "Ankommen",
               description:
-                "Ihr Kind wird behutsam eingewohnt und von unseren Fachkraften begleitet.",
+                "Ihr Kind wird behutsam eingewöhnt und von unseren Fachkräften begleitet.",
             },
           ]}
         />
@@ -96,11 +96,11 @@ export default function FuerKinderPage() {
       {/* Weitere Angebote */}
       <Section>
         <ScrollReveal>
-          <h2 className="mb-2 text-3xl font-bold text-warm-800">
-            Weitere Angebote fur junge Menschen
+          <h2 className="mb-2 text-3xl font-bold text-warm-800 dark:text-warm-200">
+            Weitere Angebote für junge Menschen
           </h2>
-          <p className="mb-10 max-w-2xl text-warm-600">
-            Schulsozialarbeit, Jugendnetzwerk und kreative Projekte -- wir sind
+          <p className="mb-10 max-w-2xl text-warm-600 dark:text-warm-400">
+            Schulsozialarbeit, Jugendnetzwerk und kreative Projekte: Wir sind
             dort, wo junge Menschen uns brauchen.
           </p>
         </ScrollReveal>
@@ -119,11 +119,11 @@ export default function FuerKinderPage() {
               <Phone size={28} className="text-white" />
             </div>
             <h2 className="mb-3 text-3xl font-bold text-white">
-              Interesse an einem Platz fur Ihr Kind?
+              Interesse an einem Platz für Ihr Kind?
             </h2>
             <p className="mx-auto mb-8 max-w-xl text-red-100">
-              Ob Kita-Platz, Schulsozialarbeit oder ein Jugendprojekt -- wir
-              freuen uns auf Ihre Anfrage und beraten Sie gerne personlich.
+              Ob Kita-Platz, Schulsozialarbeit oder ein Jugendprojekt, wir
+              freuen uns auf Ihre Anfrage und beraten Sie gerne persönlich.
             </p>
             <Link
               href="/kontakt"

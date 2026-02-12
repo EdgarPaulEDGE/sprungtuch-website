@@ -23,10 +23,10 @@ export default function ImpressumPage() {
           <article className="prose prose-warm max-w-none space-y-8">
             {/* Angaben gemäß § 5 TMG */}
             <div>
-              <h2 className="text-2xl font-bold text-warm-800">
+              <h2 className="text-2xl font-bold text-warm-800 dark:text-warm-200">
                 Angaben gemäß § 5 TMG
               </h2>
-              <p className="mt-3 text-warm-700 leading-relaxed">
+              <p className="mt-3 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Sprungtuch e.V.
                 <br />
                 Wahmstraße 43-45
@@ -37,10 +37,10 @@ export default function ImpressumPage() {
 
             {/* Vertretung */}
             <div>
-              <h2 className="text-2xl font-bold text-warm-800">
+              <h2 className="text-2xl font-bold text-warm-800 dark:text-warm-200">
                 Vertreten durch
               </h2>
-              <p className="mt-3 text-warm-700 leading-relaxed">
+              <p className="mt-3 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Julius Schorpp (Geschäftsführung)
                 <br />
                 Karoline Stojan-Brauer (Geschäftsführung)
@@ -49,8 +49,8 @@ export default function ImpressumPage() {
 
             {/* Kontakt */}
             <div>
-              <h2 className="text-2xl font-bold text-warm-800">Kontakt</h2>
-              <p className="mt-3 text-warm-700 leading-relaxed">
+              <h2 className="text-2xl font-bold text-warm-800 dark:text-warm-200">Kontakt</h2>
+              <p className="mt-3 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Telefon: 0451 7060434
                 <br />
                 E-Mail: info@sprungtuchev.de
@@ -59,10 +59,10 @@ export default function ImpressumPage() {
 
             {/* Registereintrag */}
             <div>
-              <h2 className="text-2xl font-bold text-warm-800">
+              <h2 className="text-2xl font-bold text-warm-800 dark:text-warm-200">
                 Registereintrag
               </h2>
-              <p className="mt-3 text-warm-700 leading-relaxed">
+              <p className="mt-3 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Eintragung im Vereinsregister.
                 <br />
                 Registergericht: Amtsgericht Lübeck
@@ -71,10 +71,10 @@ export default function ImpressumPage() {
 
             {/* Verantwortlich nach § 18 MStV */}
             <div>
-              <h2 className="text-2xl font-bold text-warm-800">
+              <h2 className="text-2xl font-bold text-warm-800 dark:text-warm-200">
                 Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
               </h2>
-              <p className="mt-3 text-warm-700 leading-relaxed">
+              <p className="mt-3 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Julius Schorpp
                 <br />
                 Karoline Stojan-Brauer
@@ -87,10 +87,10 @@ export default function ImpressumPage() {
 
             {/* Haftungsausschluss */}
             <div>
-              <h2 className="text-2xl font-bold text-warm-800">
+              <h2 className="text-2xl font-bold text-warm-800 dark:text-warm-200">
                 Haftung für Inhalte
               </h2>
-              <p className="mt-3 text-warm-700 leading-relaxed">
+              <p className="mt-3 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene
                 Inhalte auf diesen Seiten nach den allgemeinen Gesetzen
                 verantwortlich. Nach §§ 8 bis 10 TMG sind wir als
@@ -105,10 +105,10 @@ export default function ImpressumPage() {
 
             {/* Haftung für Links */}
             <div>
-              <h2 className="text-2xl font-bold text-warm-800">
+              <h2 className="text-2xl font-bold text-warm-800 dark:text-warm-200">
                 Haftung für Links
               </h2>
-              <p className="mt-3 text-warm-700 leading-relaxed">
+              <p className="mt-3 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Unser Angebot enthält Links zu externen Websites Dritter, auf
                 deren Inhalte wir keinen Einfluss haben. Deshalb können wir für
                 diese fremden Inhalte auch keine Gewähr übernehmen. Für die
@@ -122,8 +122,8 @@ export default function ImpressumPage() {
 
             {/* Urheberrecht */}
             <div>
-              <h2 className="text-2xl font-bold text-warm-800">Urheberrecht</h2>
-              <p className="mt-3 text-warm-700 leading-relaxed">
+              <h2 className="text-2xl font-bold text-warm-800 dark:text-warm-200">Urheberrecht</h2>
+              <p className="mt-3 text-warm-700 dark:text-warm-300 leading-relaxed">
                 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
                 diesen Seiten unterliegen dem deutschen Urheberrecht. Die
                 Vervielfältigung, Bearbeitung, Verbreitung und jede Art der

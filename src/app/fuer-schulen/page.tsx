@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
 };
 
-// Highlights fur Schulen
+// Highlights für Schulen
 const highlights = [
   {
     icon: BookOpen,
@@ -29,15 +29,15 @@ const highlights = [
   },
   {
     icon: Shield,
-    title: "Erfahrene Fachkrafte",
+    title: "Erfahrene Fachkräfte",
     description:
       "Unsere Trainer:innen bringen jahrelange Erfahrung in der Schularbeit mit.",
   },
   {
     icon: Users,
-    title: "Fur alle Altersgruppen",
+    title: "Für alle Altersgruppen",
     description:
-      "Von der Grundschule bis zur Berufsschule -- wir passen unsere Angebote an.",
+      "Von der Grundschule bis zur Berufsschule, wir passen unsere Angebote an.",
   },
 ];
 
@@ -45,33 +45,33 @@ export default function FuerSchulenPage() {
   return (
     <>
       <PageHero
-        title="Fur Schulen & Institutionen"
-        subtitle="Workshops, Programme und Begleitung fur ein respektvolles Miteinander -- direkt an Ihrer Schule."
+        title="Für Schulen & Institutionen"
+        subtitle="Workshops, Programme und Begleitung für ein respektvolles Miteinander, direkt an Ihrer Schule."
         variant="professional"
       />
 
-      {/* Warum Sprungtuch -- Highlights */}
+      {/* Warum Sprungtuch: Highlights */}
       <Section>
         <ScrollReveal>
-          <h2 className="mb-2 text-center text-3xl font-bold text-warm-800">
+          <h2 className="mb-2 text-center text-3xl font-bold text-warm-800 dark:text-warm-200">
             Warum mit uns arbeiten?
           </h2>
-          <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600">
-            Seit uber 30 Jahren unterstutzen wir Schulen in Lubeck mit
+          <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600 dark:text-warm-400">
+            Seit über 30 Jahren unterstützen wir Schulen in Lübeck mit
             praxisnahen Angeboten.
           </p>
         </ScrollReveal>
         <div className="grid gap-8 md:grid-cols-3">
           {highlights.map((item) => (
             <ScrollReveal key={item.title}>
-              <div className="flex flex-col items-center rounded-xl border border-warm-200 bg-white p-8 text-center shadow-sm transition-shadow duration-300 hover:shadow-md">
-                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-blue-50 text-brand-blue">
+              <div className="flex flex-col items-center rounded-xl border border-warm-200 dark:border-warm-700 bg-white dark:bg-warm-800 p-8 text-center shadow-sm transition-shadow duration-300 hover:shadow-md">
+                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-blue-50 dark:bg-blue-900/30 text-brand-blue">
                   <item.icon size={28} />
                 </div>
-                <h3 className="mb-2 text-lg font-semibold text-warm-800">
+                <h3 className="mb-2 text-lg font-semibold text-warm-800 dark:text-warm-200">
                   {item.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-warm-600">
+                <p className="text-sm leading-relaxed text-warm-600 dark:text-warm-400">
                   {item.description}
                 </p>
               </div>
@@ -83,11 +83,11 @@ export default function FuerSchulenPage() {
       {/* Prozess-Schritte */}
       <Section background="alt">
         <ScrollReveal>
-          <h2 className="mb-2 text-center text-3xl font-bold text-warm-800">
+          <h2 className="mb-2 text-center text-3xl font-bold text-warm-800 dark:text-warm-200">
             So funktioniert die Zusammenarbeit
           </h2>
-          <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600">
-            Vom Erstgesprach bis zur Durchfuhrung -- wir begleiten Sie
+          <p className="mx-auto mb-12 max-w-2xl text-center text-warm-600 dark:text-warm-400">
+            Vom Erstgespräch bis zur Durchführung begleiten wir Sie
             professionell.
           </p>
         </ScrollReveal>
@@ -101,12 +101,12 @@ export default function FuerSchulenPage() {
             {
               title: "Konzept entwickeln",
               description:
-                "Wir erstellen ein massgeschneidertes Angebot fur Ihre Schule oder Einrichtung.",
+                "Wir erstellen ein maßgeschneidertes Angebot für Ihre Schule oder Einrichtung.",
             },
             {
-              title: "Durchfuhrung",
+              title: "Durchführung",
               description:
-                "Unsere Fachkrafte kommen zu Ihnen und fuhren die Workshops professionell durch.",
+                "Unsere Fachkräfte kommen zu Ihnen und führen die Workshops professionell durch.",
             },
           ]}
         />
@@ -115,12 +115,12 @@ export default function FuerSchulenPage() {
       {/* Unsere Angebote */}
       <Section>
         <ScrollReveal>
-          <h2 className="mb-2 text-3xl font-bold text-warm-800">
-            Unsere Angebote fur Schulen
+          <h2 className="mb-2 text-3xl font-bold text-warm-800 dark:text-warm-200">
+            Unsere Angebote für Schulen
           </h2>
-          <p className="mb-10 max-w-2xl text-warm-600">
-            Von Anti-Bias-Workshops bis Gewaltpravention -- wir bieten
-            vielfältige Programme fur Schuler:innen und Lehrkrafte.
+          <p className="mb-10 max-w-2xl text-warm-600 dark:text-warm-400">
+            Von Anti-Bias-Workshops bis Gewaltprävention bieten wir
+            vielfältige Programme für Schüler:innen und Lehrkräfte.
           </p>
         </ScrollReveal>
         <div className="grid gap-6 md:grid-cols-2">
@@ -141,8 +141,8 @@ export default function FuerSchulenPage() {
               Interesse an einem Workshop?
             </h2>
             <p className="mx-auto mb-8 max-w-xl text-blue-100">
-              Wir entwickeln gerne ein passendes Angebot fur Ihre Schule oder
-              Einrichtung. Nehmen Sie Kontakt mit uns auf -- wir beraten Sie
+              Wir entwickeln gerne ein passendes Angebot für Ihre Schule oder
+              Einrichtung. Nehmen Sie Kontakt mit uns auf, wir beraten Sie
               unverbindlich.
             </p>
             <Link

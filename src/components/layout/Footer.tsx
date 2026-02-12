@@ -26,8 +26,8 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-warm-600 dark:text-warm-400">
-              Kinder- und Jugendhilfe in Luebeck. Wir begleiten Familien, staerken
-              Kinder und schaffen Raum fuer Entwicklung und Inklusion.
+              Kinder- und Jugendhilfe in Lübeck. Wir begleiten Familien, stärken
+              Kinder und schaffen Raum für Entwicklung und Inklusion.
             </p>
 
             {/* Kontaktinfos */}

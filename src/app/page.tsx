@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { StatsCounter } from "@/components/sections/StatsCounter";
 import { ServiceCard } from "@/components/sections/ServiceCard";
-import { TestimonialCarousel } from "@/components/sections/TestimonialCarousel";
 import { CTABand } from "@/components/sections/CTABand";
 import { PartnerLogoBar } from "@/components/sections/PartnerLogoBar";
 import Section from "@/components/layout/Section";
@@ -46,7 +45,6 @@ export default function Home() {
           ))}
         </div>
       </Section>
-      <TestimonialCarousel />
       <CTABand />
       <PartnerLogoBar />
     </>

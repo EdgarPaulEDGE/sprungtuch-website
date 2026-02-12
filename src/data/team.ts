@@ -23,20 +23,20 @@ export const leadership: TeamMember[] = [
 
 export const departments: TeamMember[] = [
   {
-    name: "Abteilungsleitung",
-    role: "Ambulante Soziale Hilfen",
+    name: "Ambulante Soziale Hilfen",
+    role: "Sozialpädagogische Familienhilfe, Begleiteter Umgang und mehr",
     department: "familien",
     phone: "0451 7060434",
   },
   {
-    name: "Abteilungsleitung",
-    role: "Bildung und Erziehung",
+    name: "Bildung und Erziehung",
+    role: "Kindertagesstätten, Schulsozialarbeit und Jugendprojekte",
     department: "kinder",
     phone: "0451 7060434",
   },
   {
-    name: "Abteilungsleitung",
-    role: "Projekte",
+    name: "Projekte",
+    role: "Demokratieförderung, Engagement und Inklusion",
     department: "engagement",
     phone: "0451 7060434",
   },
