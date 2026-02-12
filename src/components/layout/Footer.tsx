@@ -129,7 +129,7 @@ export default function Footer() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-4 py-6 sm:flex-row">
             <p className="text-xs text-warm-500 dark:text-warm-500">
-              &copy; 2024 Sprungtuch e.V. Luebeck
+              &copy; {new Date().getFullYear()} Sprungtuch e.V. Lübeck
             </p>
             <p className="text-xs text-warm-400 dark:text-warm-600">
               Alle Rechte vorbehalten.
