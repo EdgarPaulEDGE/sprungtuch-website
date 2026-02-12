@@ -10,6 +10,17 @@ import { cn } from "@/lib/utils";
 import { mainNavigation } from "@/data/navigation";
 import { useTheme } from "@/hooks/useTheme";
 
+// Seiten mit dunklem Hero-Hintergrund (professional = blau, energetic = rot)
+// Auf diesen Seiten muss die Header-Schrift weiss sein solange nicht gescrollt
+const darkHeroRoutes = [
+  "/fuer-schulen",
+  "/kontakt",
+  "/impressum",
+  "/datenschutz",
+  "/engagement",
+  "/karriere",
+];
+
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -18,6 +29,11 @@ export default function Header() {
   const pathname = usePathname();
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const mobileMenuButtonRef = useRef<HTMLButtonElement>(null);
+
+  // Ist die aktuelle Seite eine mit dunklem Hero?
+  const hasDarkHero = darkHeroRoutes.includes(pathname);
+  // Weisse Schrift nur wenn dunkler Hero UND noch nicht gescrollt
+  const useWhiteText = hasDarkHero && !isScrolled;
 
   // Scroll-Erkennung fuer Header-Styling
   useEffect(() => {
@@ -116,7 +132,14 @@ export default function Header() {
                 className="h-9 w-auto md:h-10"
                 priority
               />
-              <span className="text-lg font-bold tracking-tight text-warm-800 dark:text-warm-100 md:text-xl">
+              <span
+                className={cn(
+                  "text-lg font-bold tracking-tight md:text-xl transition-colors",
+                  useWhiteText
+                    ? "text-white"
+                    : "text-warm-800 dark:text-warm-100"
+                )}
+              >
                 Sprungtuch
               </span>
             </Link>
@@ -130,15 +153,24 @@ export default function Header() {
                   className={cn(
                     "relative rounded-lg px-3 py-2 text-sm font-medium transition-colors",
                     isActive(item.href)
-                      ? "text-brand-red dark:text-red-400"
-                      : "text-warm-600 hover:text-warm-800 dark:text-warm-400 dark:hover:text-warm-200"
+                      ? useWhiteText
+                        ? "text-white"
+                        : "text-brand-red dark:text-red-400"
+                      : useWhiteText
+                        ? "text-white/80 hover:text-white"
+                        : "text-warm-600 hover:text-warm-800 dark:text-warm-400 dark:hover:text-warm-200"
                   )}
                 >
                   {item.label}
                   {isActive(item.href) && (
                     <motion.span
                       layoutId="activeNav"
-                      className="absolute bottom-0 left-3 right-3 h-0.5 rounded-full bg-brand-red dark:bg-red-400"
+                      className={cn(
+                        "absolute bottom-0 left-3 right-3 h-0.5 rounded-full",
+                        useWhiteText
+                          ? "bg-white"
+                          : "bg-brand-red dark:bg-red-400"
+                      )}
                       transition={{ type: "spring", stiffness: 350, damping: 30 }}
                     />
                   )}
@@ -153,8 +185,9 @@ export default function Header() {
                 onClick={toggleTheme}
                 className={cn(
                   "flex h-10 w-10 items-center justify-center rounded-lg transition-colors",
-                  "text-warm-500 hover:bg-warm-100 hover:text-warm-700",
-                  "dark:text-warm-400 dark:hover:bg-warm-800 dark:hover:text-warm-200"
+                  useWhiteText
+                    ? "text-white/80 hover:bg-white/10 hover:text-white"
+                    : "text-warm-500 hover:bg-warm-100 hover:text-warm-700 dark:text-warm-400 dark:hover:bg-warm-800 dark:hover:text-warm-200"
                 )}
                 aria-label={isDark ? "Helles Design aktivieren" : "Dunkles Design aktivieren"}
               >
@@ -189,8 +222,9 @@ export default function Header() {
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 className={cn(
                   "flex h-10 w-10 items-center justify-center rounded-lg transition-colors lg:hidden",
-                  "text-warm-500 hover:bg-warm-100 hover:text-warm-700",
-                  "dark:text-warm-400 dark:hover:bg-warm-800 dark:hover:text-warm-200"
+                  useWhiteText
+                    ? "text-white/80 hover:bg-white/10 hover:text-white"
+                    : "text-warm-500 hover:bg-warm-100 hover:text-warm-700 dark:text-warm-400 dark:hover:bg-warm-800 dark:hover:text-warm-200"
                 )}
                 aria-label={isMobileMenuOpen ? "Menue schliessen" : "Menue oeffnen"}
                 aria-expanded={isMobileMenuOpen}
@@ -311,7 +345,7 @@ export default function Header() {
                 {/* Panel Footer */}
                 <div className="border-t border-warm-200 dark:border-warm-700 px-6 py-4">
                   <p className="text-xs text-warm-500 dark:text-warm-400">
-                    &copy; {new Date().getFullYear()} Sprungtuch e.V. Luebeck
+                    &copy; {new Date().getFullYear()} Sprungtuch e.V. Lübeck
                   </p>
                 </div>
               </div>
