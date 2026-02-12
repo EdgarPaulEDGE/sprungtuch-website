@@ -1,26 +1,94 @@
 @import "tailwindcss";
 
+/* Tailwind v4: Dark Mode ueber .dark CSS-Klasse statt @media prefers-color-scheme */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FDFCFA;
+  --foreground: #332D27;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-plus-jakarta);
+
+  /* Brand Colors */
+  --color-brand-red: #E21E48;
+  --color-brand-blue: #0273B5;
+
+  /* Red Scale */
+  --color-red-50: #FEF2F4;
+  --color-red-100: #FDE6EA;
+  --color-red-200: #FACDD6;
+  --color-red-300: #F5A3B3;
+  --color-red-400: #ED5A74;
+  --color-red-500: #E21E48;
+  --color-red-600: #C41A3E;
+  --color-red-700: #A31533;
+  --color-red-800: #861129;
+  --color-red-900: #6E0E22;
+
+  /* Blue Scale */
+  --color-blue-50: #F0F7FC;
+  --color-blue-100: #E0EEF8;
+  --color-blue-200: #B3D7ED;
+  --color-blue-300: #7ABCDE;
+  --color-blue-400: #3A98C8;
+  --color-blue-500: #0273B5;
+  --color-blue-600: #02639D;
+  --color-blue-700: #015483;
+  --color-blue-800: #01436A;
+  --color-blue-900: #013352;
+
+  /* Warm Neutrals */
+  --color-warm-50: #FDFCFA;
+  --color-warm-100: #F8F6F3;
+  --color-warm-200: #F0ECE6;
+  --color-warm-300: #E2DCD3;
+  --color-warm-400: #C4BBB0;
+  --color-warm-500: #9B9085;
+  --color-warm-600: #736A60;
+  --color-warm-700: #524A42;
+  --color-warm-800: #332D27;
+  --color-warm-900: #1A1714;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #1A1714;
+  --foreground: #F8F6F3;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid var(--color-brand-blue);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Selection colors */
+::selection {
+  background-color: #E21E4820;
+  color: inherit;
+}
+
+/* Partner Logo Bar — Infinite scroll keyframes */
+@keyframes partner-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }

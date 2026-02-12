@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 440" fill="none">
+  <!-- Blaues Quadrat (unten) -->
+  <rect x="20" y="60" width="360" height="360" rx="8" fill="#0273B5"/>
+  <!-- Weißer Kreis-Ring -->
+  <circle cx="200" cy="220" r="185" stroke="white" stroke-width="24" fill="none"/>
+  <!-- Roter Kreis -->
+  <circle cx="200" cy="220" r="165" fill="#E21E48"/>
+</svg>
